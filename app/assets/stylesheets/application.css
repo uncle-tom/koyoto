@@ -1004,6 +1004,7 @@ footer a:hover {
 ****************/
 #createpage h1 {
 	font-family: 'Nova';
+	font-size: 28px;
 }
 
 #createpage .welcome-text {
@@ -1018,14 +1019,58 @@ footer a:hover {
 
 #createpage li {
 	display: inline-block;
+	font-size: 16px;
   margin: 0 20px 0 0;
-  border-bottom: 1px solid rgb(0,0,0) !important;
+  padding: 8px 8px 8px 8px;
+  border-bottom: 1px solid rgb(0,0,0);
   cursor: pointer;
 }
 
-.create-active {
-	background: red;
-  padding: 8px 12px 11px;
+.createactive {
+	position: relative;
+	background: #e21914;
+  border: 1px solid #d71813;
+  border-radius: 5px;
+  border-bottom: none;
+  box-shadow: inset 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+  padding: 8px 8px 8px 8px;
+  border-bottom: 0px solid rgb(0,0,0) !important;
+  color: #fff;
+  font-weight: 700;
+}
+
+.createactive:after {
+  border-top: 8px solid #e21914;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  content: " ";
+  display: block;
+  left: 50%;
+  margin-left: -7px;
+  position: absolute;
+  bottom: -8px;
+}
+
+#createpage .section img {
+	width: 100%;
+}
+
+#createpage .section .seotitle {
+	margin-top: 50px;
+	font-size: 24px;
+	font-family: 'Nova';
+}
+
+#createpage .section .seotext {
+	color: #7f7f7f;
+	font-size: 14px;
+}
+
+#createpage .include li {
+	color: #818c91;
+	border-bottom: 1px dashed rgba(129,140,145,0.5);
+	font-size: 16px;
+	padding: 0px;
 }
 
 /****************

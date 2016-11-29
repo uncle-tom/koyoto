@@ -6,17 +6,42 @@
 			<div class="col-md-12">
 				<div class="margin50"></div>
 				<h1>Создание сайтов</h1>
-				<p class="welcome-text_desc">Качественный сайт - успешный бизнес!</p>
+				<!-- <p class="welcome-text_desc">Качественный сайт - успешный бизнес!</p> -->
 			</div>
 		</div>
 	</div>
 	<div class="container">
-		<ul>
-			<li ng-class="{ 'create-active': isActive === 'vizitka'}" ng-click="isActive = 'vizitka'"><span ng-click="isActive = 'vizitka'">Сайт-визитка</span></li>
-			<li ng-class="{ 'create-active': isActive = 'promo'}"><span ng-click="isActive('promo')">Промо-сайт</li>
-			<li ng-class="{ 'create-active': isActive = 'landing'}"><span ng-click="isActive('landing')">Landing Page</li>
-			<li ng-class="{ 'create-active': isActive = 'korp'}"><span ng-click="isActive('korp')">Корпоративный</li>
-			<li ng-class="{ 'create-active': isActive = 'store'}"><span ng-click="isActive('store')">Интернет-магазин</li>
+		<ul >
+			<li ng-repeat="section in sections" ng-class="{createactive : isSelected(section)}" ng-click="setMaster(section)">
+        <span >{{section.name}}</span>
+      </li>
 		</ul>
 	</div>
+	<div class="margin50"></div>
+	<div class="section" ng-repeat="section in sections">
+		<div ng-show="isSelected(section)">
+			<div class="slogan text-center"><h2>{{section.slogan}}</h2></div>
+			
+			<ul class="include">
+				<li ng-repeat="incl in section.include">
+        	<span>{{incl.i}}</span>
+      	</li>
+			</ul>
+			<div class="text-center">
+				<h2 class="seotitle">{{section.seotitle}}</h2>
+				<p class="seotext">{{section.seotext}}</p>	
+			</div>
+			<div class="container">
+				<div class="col-md-6">
+					<img ng-src="{{section.img}}" alt="">
+				</div>
+				<div class="col-md-6">
+					<p>{{section.description}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Сайт-визитка -->
+	<div class="slogan"></div>
 </section>
