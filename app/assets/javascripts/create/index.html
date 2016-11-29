@@ -1,2 +1,22 @@
 <title>Создание сайта</title>
 <meta name="description" content="" />
+<section id="createpage">
+	<div class="container">
+		<div class="welcome-text">
+			<div class="col-md-12">
+				<div class="margin50"></div>
+				<h1>Создание сайтов</h1>
+				<p class="welcome-text_desc">Качественный сайт - успешный бизнес!</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<ul>
+			<li ng-class="{ 'create-active': isActive === 'vizitka'}" ng-click="isActive = 'vizitka'"><span ng-click="isActive = 'vizitka'">Сайт-визитка</span></li>
+			<li ng-class="{ 'create-active': isActive = 'promo'}"><span ng-click="isActive('promo')">Промо-сайт</li>
+			<li ng-class="{ 'create-active': isActive = 'landing'}"><span ng-click="isActive('landing')">Landing Page</li>
+			<li ng-class="{ 'create-active': isActive = 'korp'}"><span ng-click="isActive('korp')">Корпоративный</li>
+			<li ng-class="{ 'create-active': isActive = 'store'}"><span ng-click="isActive('store')">Интернет-магазин</li>
+		</ul>
+	</div>
+</section>
