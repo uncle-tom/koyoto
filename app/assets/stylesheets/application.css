@@ -42,7 +42,10 @@
 	MOBILE HEADER
 	*/
 	.navbar-toggle .icon-bar {
-		background: #000000 !important;
+		background: #fff !important;
+	}
+	.nav-mobile {
+		background-color: #fff;
 	}
 	.navigation {
 		width: 100%;
@@ -224,7 +227,7 @@ md-content.md-default-theme, md-content {
 }
 
 .navbar-toggle {
-	padding: 30px;
+	padding: 20px;
 	margin: 0px;
 }
 
