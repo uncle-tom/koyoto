@@ -5,7 +5,6 @@ angular.module('MyStore').controller('createCtrl',
 
 function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth, $stateParams) {	
   console.log('createCtrl')
-	
 	$scope.sections = [
     {
     	name: 'Сайт-визитка',
@@ -37,12 +36,12 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
   	},
     {
     	name: 'Landing Page',
-  		slogan: 'Качественный сайт - успешный бизнес!',
-	    seotitle: 'Заказать сайт-визитку под ключ',
+  		slogan: 'Универсальное и эффективное решение!',
+	    seotitle: 'Заказать Landing Page',
 	    img: 'http://imprimatur.artlebedev.ru/f/1/features/geo-vbank.jpg',
 	    include: [
 	    	{i: 'Уникальный дизайн'},
-		    {i: 'Внутренняя seo-оптимизация'}
+		    {i: 'Индивидуальный подход'}
 	    ],
 	    seotext: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ipsam nesciunt suscipit ut nemo quidem.',
 	    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti necessitatibus impedit saepe, repellendus reprehenderit voluptatibus aliquid architecto. Libero possimus quidem, alias, ipsam molestiae aliquam, voluptates error, enim debitis molestias exercitationem.'
@@ -73,6 +72,7 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
   	},
   ];
 
+  $scope.selected = $scope.sections[0];
   $scope.setMaster = function(section) {
     $scope.selected = section;
   }
