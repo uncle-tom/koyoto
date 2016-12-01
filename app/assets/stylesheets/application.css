@@ -449,8 +449,8 @@ header:hover {
 	background: #ffffff;
 }
 #vizitka img {
-	border-radius: 8px;
-	box-shadow: 1px 5px 10px #333
+	/*border-radius: 8px;
+	box-shadow: 1px 5px 10px #333*/
 }
 #vizitka img, #promo img, #landing img, #corp img, #store img, #uslugi2 img {
 	width: 100%;
