@@ -128,6 +128,55 @@
 	.photoblock p {
 		width: 100%;
 	}
+
+	/*********
+		contactpage
+	*********/
+	.contactpage_text {
+		padding: 80px 10px !important;
+	}
+	.contactpage h1 {
+    font-size: 3em !important;
+  }
+  .contactpage .phone-number {
+  	font-size: 1.6em !important;
+  }
+  .contactpage .address {
+  	padding: 0px;
+  }
+  .contactpage .email {
+  	padding: 0px;
+  }
+  .contactpage .email p {
+  	float: left !important;
+  }
+
+  /*********
+		pricepage
+	*********/
+	.price-number {
+		font-size: 65px !important;
+	}
+
+	/*********
+	 aboutpage
+	*********/
+	.aboutpage_text {
+		padding: 50px 20px !important;
+	}
+	.aboutpage_desc {
+		width: 100% !important;
+	}
+
+	/*********
+	 seopage
+	*********/
+	.welcome-text h1 {
+		font-size: 32px !important;
+	}
+	.photoblock p {
+		width: 100% !important;
+	}
 }
 
 .margin0 {
