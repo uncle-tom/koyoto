@@ -9,6 +9,49 @@
 		</div>
 		<h1 class="text-center">Продвижение в социальных сетях</h1>
 		<div class="col-md-9 smm-welcome-desctiption">
-			<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum esse eius excepturi veniam pariatur vero perspiciatis hic possimus odit rem, numquam molestias reprehenderit consequuntur magnam modi in repellat cumque, corporis nesciunt, ad maxime! Doloremque, aperiam nisi, fugiat laboriosam fugit voluptatum, impedit praesentium quidem vero error facere optio eveniet totam tempore.</p>
+			<p class="text-center">Чтобы добиться успеха вы должны либо самостоятельно качественно выполнять работу, либо доверить дело профессионалам. Если у вас не получается, либо просто у вас нет времени на то, чтобы собственными руками раскрутить свою страничку в социальных сетях, то выход один - дать это сделать кому-то, кто уже проделывал такие фокусы. Например, нам.</p>
+		</div>
+		<div class="margin50"></div>
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 toolbar">
+				<div ng-repeat="smm in smmsections" ng-click="setMaster(smm)" class="toolbar-row">
+					<div class="row">
+						<div class="col-md-1 col-xs-1">
+							<p><img ng-src="{{smm.number}}" alt=""></p>
+						</div>
+						<div class="col-md-10 col-xs-10">
+							<p>{{smm.name}}</p>
+						</div>
+						<div class="col-md-1 pc-show">
+							<p><i class="fa fa-caret-down" aria-hidden="true"></i></p>
+						</div>
+						<div class="col-md-1 col-xs-1"></div>
+						<div class="col-md-10 col-xs-10" >
+							<div class="toolbar-smm-text" ng-show="isSelected(smm)">
+								<p>{{smm.text}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <md-toolbar class="md-primary md-hue-1" ng-click="click.$help3 = !click.$help3">
+					<div class="row">
+						<div class="col-md-2">
+							<h3>1</h3> 
+						</div>
+						<div class="col-md-8">
+							<h3 class="md-flex">Аудит и взгляд со стороны</h3>	
+						</div>
+						<div class="col-md-2">
+							<h3>Вниз</h3>
+						</div>
+					</div>
+				</md-toolbar>
+				<md-content ng-show="click.$help3">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aut praesentium, a quisquam possimus, minima consequatur unde et, numquam, earum libero officiis recusandae corrupti ipsam.
+				</md-content> -->
+			</div>
+		</div>
+		
 	</div>
 </section>

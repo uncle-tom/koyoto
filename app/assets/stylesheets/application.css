@@ -986,6 +986,33 @@ footer a:hover {
 	margin: auto;
 }
 
+#smmpage .toolbar {
+	padding: 0px;
+}
+
+#smmpage .toolbar-row {
+	font-size: 26px;
+	font-family: 'Comfortaa';
+	color: #08c;
+	border-top: 1px solid #d6d6d6;
+	padding: 20px 0px 10px 0px;
+	outline: none;
+}
+
+#smmpage .toolbar-smm-text {
+	font-size: 18px;
+	font-family: 'Istok Web', sans-serif;
+	color:#000;
+}
+
+#smmpage md-toolbar {
+	background: transparent;
+  color: #08c;
+  font-weight: 100;
+  border-top: 1px solid #d6d6d6;
+  outline: none;
+}
+
 
 /****************
 	SEO
