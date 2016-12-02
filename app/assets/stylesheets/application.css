@@ -981,6 +981,11 @@ footer a:hover {
   line-height: 1.85714;
 }
 
+#smmpage .smm-welcome-desctiption {
+	float: none;
+	margin: auto;
+}
+
 
 /****************
 	SEO
