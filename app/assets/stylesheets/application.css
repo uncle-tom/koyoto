@@ -964,6 +964,17 @@ footer a:hover {
 	padding: 50px 0px;
 }
 
+#smmpage h1 {
+	font-family: 'Nova';
+	margin-top: 50px;
+}
+
+#smmpage .working-with {
+	border-bottom: 1px solid rgba(128, 128, 128, 0.35);
+	padding: 0px;
+	margin: -25px 0px 0px 0px;
+}
+
 #smmpage .working-with-us {
 	color: #333;
 	font-size: 28px;
