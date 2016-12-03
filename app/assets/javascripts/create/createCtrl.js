@@ -8,7 +8,7 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
 	$scope.sections = [
     {
     	name: 'Сайт-визитка',
-	    slogan: 'Качественный сайт - успешный бизнес!',
+	    slogan: 'Заявите о себе - начните продавать в интернете!',
 	    seotitle: 'Заказать сайт-визитку под ключ',
 	    img: 'http://imprimatur.artlebedev.ru/f/1/features/geo-vbank.jpg',
 	    include: [
@@ -20,7 +20,7 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
   	},
     {
     	name: 'Промо-сайт',
-  		slogan: 'Заявите о себе - начните продавать в интернете!',
+  		slogan: 'Качественный сайт - успешный бизнес!',
 	    seotitle: 'Заказать промо-сайт прямо сейчас',
 	    img: 'http://imprimatur.artlebedev.ru/f/1/features/geo-vbank.jpg',
 	    include: [
