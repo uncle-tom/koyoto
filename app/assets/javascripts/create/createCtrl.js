@@ -48,7 +48,7 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
   	},
     {
     	name: 'Корпоративный',
-  		slogan: 'Качественный сайт - успешный бизнес!',
+  		slogan: 'Ваш сайт - лицо компании!',
 	    seotitle: 'Заказать сайт-визитку под ключ',
 	    img: 'http://imprimatur.artlebedev.ru/f/1/features/geo-vbank.jpg',
 	    include: [
@@ -60,7 +60,7 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
   	},
     {
     	name: 'Интернет-магазин',
-  		slogan: 'Качественный сайт - успешный бизнес!',
+  		slogan: 'Продавать в интернете так легко!',
 	    seotitle: 'Заказать сайт-визитку под ключ',
 	    img: 'http://imprimatur.artlebedev.ru/f/1/features/geo-vbank.jpg',
 	    include: [

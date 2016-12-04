@@ -47,7 +47,7 @@ function smmCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth, $s
 	    text: ''
   	},
     {
-    	name: 'Уникальный стиль',
+    	name: 'Оформление страницы',
   		number: 'http://images.apple.com/v/itunes/marketing-on-music/a/images/number_5_large.png',
 	    include: [
 	    	{i: 'Уникальный дизайн'},
@@ -64,6 +64,7 @@ function smmCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth, $s
 	    ],
 	    text: ''
   	},
+
   ];
 
 	$scope.setMaster = function(section) {
