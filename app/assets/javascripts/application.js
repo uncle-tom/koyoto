@@ -42,3 +42,5 @@
 //= require angular-material
 //= require wowjs
 //= require angular-youtube-mb
+//= require swiper
+//= require angular-swiper

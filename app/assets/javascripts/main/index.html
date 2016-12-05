@@ -169,7 +169,13 @@
 		<div class="margin50"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<img src="assets/mac2.png" alt="">
+				<div class="slider">
+					<ks-swiper-container override-parameters="{'effect':'fade'}" initial-slide="3" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="5" pagination-clickable="false">
+				    <ks-swiper-slide class="swiper-slide" ng-repeat="s in slider">
+				        <img ng-src="{{s.image}}">
+				    </ks-swiper-slide>
+					</ks-swiper-container>
+				</div>
 				<p><span class="example-site">Посмотреть пример сайта</span></p>
 			</div>
 		</div>

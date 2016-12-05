@@ -7,29 +7,37 @@
 			<div class="price-desc">
 				<div class="price-desc_inner">
 					<h2>Создание сайтов</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, totam, repellat eius obcaecati, delectus provident quis harum magnam laudantium accusamus alias cumque velit, sapiente omnis culpa beatae quaerat praesentium nisi.</p>
+					<p>Мы создаем красивые, функциональные, уникальные сайты, которые нравятся, как нашим клиентам, так и посетителям. Выполненные нами сайты проходят проверку по более, чем 50 параметрам, что гарантирует качество и удобство. </p>
 					<h3>Выберите тип сайта:</h3>
 					<md-input-container flex="100">
 			      <md-select name="type" ng-model="project">
 			        <md-option value="vizitka">Cайт-визитка</md-option>
-			        <md-option value="promo">Промо-сайт</md-option>
 			        <md-option value="landing">Landing Page</md-option>
+			        <md-option value="promo">Промо-сайт</md-option>
 			        <md-option value="corp">Корпоративный сайт</md-option>
 			        <md-option value="store">Интернет-магазин</md-option>
 			      </md-select>
 			    </md-input-container>
 					<div>
 						<span ng-if="project === 'vizitka'">от <span class="price-number" >2 000</span> грн.</span>
-						<span ng-if="project === 'promo'">от <span class="price-number" >2 500</span> грн.</span>
-						<span ng-if="project === 'landing'">от <span class="price-number" >3 000</span> грн.</span>
+						<span ng-if="project === 'promo'">от <span class="price-number" >3 000</span> грн.</span>
+						<span ng-if="project === 'landing'">от <span class="price-number" >2 500</span> грн.</span>
 						<span ng-if="project === 'corp'">от <span class="price-number" >4 000</span> грн.</span>
 						<span ng-if="project === 'store'">от <span class="price-number" >5 000</span> грн.</span>
 					</div>
 					<div>
 						<h3>Вы получаете:</h3>
-						<p><i class="fa fa-flag-checkered" aria-hidden="true"></i> Готовый сайт на 10 страниц за 7 дней</p>
-						<p><i class="fa fa-user" aria-hidden="true"></i> Уникальный дизайн</p>
-						<p><i class="fa fa-user" aria-hidden="true"></i> Гарантируемую техническую поддержку</p>
+						<p ng-if="project === 'vizitka'"><i class="fa fa-check" aria-hidden="true"></i> Готовый сайт на 10 страниц за 7 дней</p>
+						<p ng-if="project === 'promo' || project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Готовый сайт за 10 рабочих дней</p>
+						<p ng-if="project === 'vizitka' || project === 'promo' || project === 'landing' || project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Уникальный дизайн</p>
+						<p ng-if="project === 'vizitka' || project === 'promo' || project === 'landing' || project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Адаптивную верстку</p>
+						<p ng-if="project === 'vizitka' || project === 'promo' || project === 'landing' || project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Гарантируемую техническую поддержку</p>
+						<p ng-if="project === 'promo' || project === 'landing' || project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Бесплатный хостинг на три месяца</p>
+						<p ng-if="project === 'promo' || project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Форму для приема заказов</p>
+						<p ng-if="project === 'store' || project === 'corp'"><i class="fa fa-check" aria-hidden="true"></i> Готовый блог внутри сайта</p>
+						<p ng-if="project === 'store' || project === 'corp'"><i class="fa fa-check" aria-hidden="true"></i> Удобную админку</p>
+						<p ng-if="project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Email рассылку прямо из админки</p>
+						<p ng-if="project === 'promo' || project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Базовую SEO-оптимизацию</p>
 					</div>
 				</div>
 			</div>

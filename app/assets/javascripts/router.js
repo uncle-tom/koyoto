@@ -13,6 +13,7 @@ angular
     'pascalprecht.translate',
     'youtube-embed',
     'ngSanitize',
+    'ksSwiper'
   ])
   .config([
     '$stateProvider',

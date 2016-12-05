@@ -15,6 +15,7 @@
  */
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "angular-material/angular-material.css";
+@import "swiper/dist/css/swiper.min.css";
 @import "wowjs/css/libs/animate.css";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css);
 
@@ -592,6 +593,30 @@ header:hover {
 
 #vk a:hover {
 	text-decoration: none;
+}
+
+#corp .slider {
+	position: relative;
+	display: block;
+}
+
+#corp .slider img {
+	position: relative;
+	height: 579px;
+  width: 927px;
+  margin-top: 109px;
+  margin-right: 6px;
+}
+
+#corp .slider:before {
+    content: '';
+    position: absolute;
+    height: 914px;
+    width: 1288px;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    background: url('mac2.png') center center no-repeat;
 }
 
 .mainpage_categories {
