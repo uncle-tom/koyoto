@@ -9,7 +9,7 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
     {
       name: "Интернет-магазин женского нижнего белья CandyLadyShop",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
-      photo: "http://images.apple.com/v/ipad-pro/e/images/overview/expand_large.jpg",
+      photo: "assets/portfolio/candy.jpg",
       href: "http://candyladyshop.ru/",
       float: "left",
       margin: "0px -15px 0px 15px"
@@ -17,7 +17,7 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
     {
       name: "Квест-проект Тайная комната",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
-      photo: "https://artjoker.ua/assets/cache/images/portfolio/6a984e33ac3b231acd133d5013582801.jpg",
+      photo: "assets/portfolio/secret.jpg",
       href: "http://secretroomkharkov.com.ua",
       float: "right",
       margin: "0px 15px 0px -15px"
@@ -25,7 +25,7 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
     {
       name: "Поиск жилья на Арабатской стрелке Rest-In-Ukraine",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
-      photo: "https://artjoker.ua/assets/cache/images/portfolio/6a984e33ac3b231acd133d5013582801.jpg",
+      photo: "assets/portfolio/rest.jpg",
       href: "http://secretroomkharkov.com.ua",
       float: "left",
       margin: "0px -15px 0px 15px"
@@ -34,7 +34,7 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
     {
       name: "KRISOL - стильная женская одежда",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
-      photo: "https://artjoker.ua/assets/cache/images/portfolio/6a984e33ac3b231acd133d5013582801.jpg",
+      photo: "assets/portfolio/krisol.jpg",
       href: "http://secretroomkharkov.com.ua",
       float: "right",
       margin: "0px 15px 0px -15px"
