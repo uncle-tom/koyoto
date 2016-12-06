@@ -12,7 +12,8 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
       photo: "assets/portfolio/candy.jpg",
       href: "http://candyladyshop.ru/",
       float: "left",
-      margin: "0px -15px 0px 15px"
+      margin: "0px -15px 0px 15px",
+      bg: "#ffdaa8"
     },
     {
       name: "Квест-проект Тайная комната",
@@ -20,7 +21,8 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
       photo: "assets/portfolio/secret.jpg",
       href: "http://secretroomkharkov.com.ua",
       float: "right",
-      margin: "0px 15px 0px -15px"
+      margin: "0px 15px 0px -15px",
+      bg: "#b5a294"
     },
     {
       name: "Поиск жилья на Арабатской стрелке Rest-In-Ukraine",
@@ -28,7 +30,8 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
       photo: "assets/portfolio/rest.jpg",
       href: "http://secretroomkharkov.com.ua",
       float: "left",
-      margin: "0px -15px 0px 15px"
+      margin: "0px -15px 0px 15px",
+      bg: "#5e7b9e"
     }
     ,
     {
@@ -37,7 +40,8 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
       photo: "assets/portfolio/krisol.jpg",
       href: "http://secretroomkharkov.com.ua",
       float: "right",
-      margin: "0px 15px 0px -15px"
+      margin: "0px 15px 0px -15px",
+      bg: "#fedcac"
     }
   ]
 }
