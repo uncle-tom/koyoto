@@ -880,13 +880,13 @@ footer a:hover {
 }
 
 .portfolio-photo {
-	width: 580px;
-	height: 580px;
+	width: 600px;
+	height: 600px;
 }
 
 .portfolio-photo_desc {
 	display: table;
-	height: 580px;
+	height: 600px;
 	margin: auto;
 }
 
