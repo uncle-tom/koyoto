@@ -37,7 +37,7 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
     {
       name: "KRISOL - стильная женская одежда",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
-      photo: "assets/portfolio/krisol.jpg",
+      photo: "assets/portfolio/krisol1.jpg",
       href: "http://secretroomkharkov.com.ua",
       float: "right",
       margin: "0px 15px 0px -15px",
