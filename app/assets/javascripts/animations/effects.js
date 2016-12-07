@@ -3,6 +3,7 @@ $(function(){
 });
 
 function init() {
+
 	// Fixed admin-sidebar_left
 	var height_admin_sidebar_left = 85;
 	var width = document.body.clientWidth;
@@ -88,11 +89,13 @@ function init() {
 		    // This is necessary so you never see what is "behind" the navbar.
 		    if (st > lastScrollTop && st > navbarHeight){
 		      // Scroll Down
+		      $('.logo-show').fadeIn();
 		      $('header').removeClass('nav-down').addClass('nav-up');
 		    } else {
 	        // Scroll Up
 	        if(st + $(window).height() < $(document).height()) {
-	            $('header').removeClass('nav-up').addClass('nav-down');
+	          $('.logo-show').fadeOut();
+            $('header').removeClass('nav-up').addClass('nav-down');
 	        }
 		    }
 		    

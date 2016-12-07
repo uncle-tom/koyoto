@@ -7,9 +7,10 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
   console.log('portfolio')
   $scope.portfolio = [
     {
-      name: "Интернет-магазин женского нижнего белья CandyLadyShop",
+      name: "CandyLadyShop - женское нижнее белье",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
       photo: "assets/portfolio/candy.jpg",
+      type: "Интернет-магазин",
       href: "http://candyladyshop.ru/",
       float: "left",
       margin: "0px -15px 0px 15px",
@@ -19,29 +20,32 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
       name: "Квест-проект Тайная комната",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
       photo: "assets/portfolio/secret.jpg",
+      type: "Промо-сайт",
       href: "http://secretroomkharkov.com.ua",
       float: "right",
       margin: "0px 15px 0px -15px",
       bg: "rgba(181, 162, 148, 0.3)"
     },
     {
-      name: "Поиск жилья на Арабатской стрелке Rest-In-Ukraine",
+      name: "Rest in Ukraine - отдыхайте в Украине",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
       photo: "assets/portfolio/rest.jpg",
+      type: "Промо-сайт",
       href: "http://secretroomkharkov.com.ua",
       float: "left",
       margin: "0px -15px 0px 15px",
       bg: "rgba(94, 123, 158, 0.3);"
-    }
-    ,
+    },
     {
       name: "KRISOL - стильная женская одежда",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
       photo: "assets/portfolio/krisol1.jpg",
+      type: "Интернет-магазин",
       href: "http://secretroomkharkov.com.ua",
       float: "right",
       margin: "0px 15px 0px -15px",
       bg: "rgba(254, 220, 172, 0.61)"
     }
+    
   ]
 }
