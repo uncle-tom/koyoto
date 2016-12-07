@@ -964,6 +964,9 @@ footer a:hover {
 /****************
 	Price
 ****************/
+#pricepage {
+	padding-top: 50px;
+}
 
 #pricepage h2 {
 	border-bottom: 2px red dotted;
@@ -998,7 +1001,7 @@ footer a:hover {
 .price-desc_inner {
 	display: table-cell;
   vertical-align: middle;
-  padding: 15px 50px;
+  padding: 15px 65px;
 }
 
 /****************
