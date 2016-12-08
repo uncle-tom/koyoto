@@ -384,6 +384,8 @@ header:hover {
 
 .logo {
 	position: fixed;
+	left: 7px;
+	z-index: 999;
 }
 
 .navigation ul {
@@ -621,14 +623,41 @@ header:hover {
 }
 
 #corp .slider:before {
-    content: '';
-    position: absolute;
-    height: 914px;
-    width: 1288px;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    background: url('mac2.png') center center no-repeat;
+  content: '';
+  position: absolute;
+  height: 914px;
+  width: 1288px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  background: url('mac2.png') center center no-repeat;
+}
+
+#landing .imac {
+  background: url('iMac.png') no-repeat center top;
+  width: 100%;
+  height: 976px;
+  display: inline-block;
+  position: relative;
+}
+
+#landing .imac-landing {
+	background-image: url('landing-mac.jpg');
+	background-position: center 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 1033px;
+  height: 580px;
+  top: 63px;
+  left: 0;
+  background-size: cover;
+  right: 0;
+  margin: 0 auto;
+  -webkit-transition: all 25s ease-out 0s;
+}
+
+#landing .imac-landing:hover {
+	background-position: center bottom !important;
 }
 
 .mainpage_categories {
@@ -865,7 +894,6 @@ footer a:hover {
 }
 
 
-
 /****************
 	Uslugi
 ****************/
@@ -1066,8 +1094,7 @@ footer a:hover {
 ****************/
 
 #smmpage {
-	margin: 30px 0px;
-	padding: 50px 0px;
+	padding: 80px 0px;
 }
 
 #smmpage h1 {
