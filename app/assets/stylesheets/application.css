@@ -551,7 +551,7 @@ header:hover {
 	font-size: 14px;
 }
 
-.ourplus {
+/*.ourplus {
 	margin: 40px 0px;
 	text-align: center;
 	color: #000;
@@ -563,8 +563,8 @@ header:hover {
 
 .ourplus img {
 	width: 15%;
-}
-
+}*/
+/*
 #coolone {
 	text-align: center;
 	color: #fff;
@@ -590,9 +590,9 @@ header:hover {
 
 #coolone hr, #cooltwo hr {
 	width: 50%;
-}
+}*/
 
-#vk {
+/*#vk {
 	text-align: center;
 	padding: 100px;
 	background-color: #507299;
@@ -612,7 +612,7 @@ header:hover {
 
 #vk a:hover {
 	text-decoration: none;
-}
+}*/
 
 #corp .slider {
 	position: relative;
@@ -666,7 +666,25 @@ header:hover {
 	background-position: center bottom !important;
 }
 
-.mainpage_categories {
+#seo {
+  background: url('http://images.apple.com/v/iphone/home/t/images/home/business_large.jpg');
+  color: #fff;
+}
+
+#smm {
+	background: url('http://images.apple.com/v/iphone/home/t/images/home/business_large.jpg');
+	color: #fff;
+}
+
+#seo .block, #smm .block {
+	padding: 178px 0px;
+}
+
+#seo .seotitle, #smm .seotitle {
+	font-size: 28px;
+}
+
+/*.mainpage_categories {
 	margin-top: 50px;
 }
 
@@ -701,7 +719,6 @@ header:hover {
 	bottom: 55px;
 	font-size: 19px;
   font-weight: 500;
-  /*line-height: 30px;*/
   color: #42648b;
 }
 
@@ -712,7 +729,6 @@ header:hover {
 	bottom: 30px;
 	font-size: 14px;
   font-weight: 500;
-  /*line-height: 35px;*/
   color: #939393;
 }
 
@@ -754,7 +770,7 @@ header:hover {
 
 .mainpage_sale-description-desc {
 	font-size: 16px;
-}
+}*/
 
 #footer {
 	background-color: #2b2b2b;
@@ -930,6 +946,7 @@ footer a:hover {
 
 .portfolio img {
 	width: 100%;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.12);
 }
 
 .portfolio .type {

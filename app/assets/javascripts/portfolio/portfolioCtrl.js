@@ -45,6 +45,16 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
       float: "right",
       margin: "0px 15px 0px -15px",
       bg: "rgba(254, 220, 172, 0.61)"
+    },
+    {
+      name: "Scooter Remont - все про скутеры",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
+      photo: "assets/portfolio/scooter.jpg",
+      type: "Корпоративный сайт",
+      href: "http://scooter-remont.com/",
+      float: "left",
+      margin: "0px -15px 0px 15px",
+      bg: "rgba(255, 218, 168, 0.49)"
     }
     
   ]
