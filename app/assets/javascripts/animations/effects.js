@@ -4,6 +4,7 @@ $(function(){
 
 function init() {
 
+	
 	// Fixed admin-sidebar_left
 	var height_admin_sidebar_left = 85;
 	var width = document.body.clientWidth;
@@ -102,7 +103,13 @@ function init() {
 		    lastScrollTop = st;
 		}
 
+		$('#nav-icon1').click(function(){
+			$(this).toggleClass('open');
+		});
 
+		$('.mobile-toogle-menu').click(function(){
+			$('.mobile-menu').toggleClass('menu-open');
+		})
 
 		$(window).scroll( function(){
       /* Check the location of each desired element */
