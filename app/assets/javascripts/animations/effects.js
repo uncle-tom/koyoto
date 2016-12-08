@@ -111,6 +111,11 @@ function init() {
 			$('.mobile-menu').toggleClass('menu-open');
 		})
 
+		$('.mobile-menu p').click(function(){
+			$('.mobile-menu').toggleClass('menu-open');
+			$('#nav-icon1').toggleClass('open')
+		})
+
 		$(window).scroll( function(){
       /* Check the location of each desired element */
       $('.promo1').each( function(i){
