@@ -684,6 +684,11 @@ header:hover {
 	font-size: 28px;
 }
 
+.why-us-seo p {
+	margin-top: 20px;
+	color: #0070c9;
+}
+
 /*.mainpage_categories {
 	margin-top: 50px;
 }
