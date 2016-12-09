@@ -687,7 +687,24 @@ header:hover {
 .why-us-seo p {
 	margin-top: 20px;
 	color: #0070c9;
+	cursor: pointer;
 }
+
+/***********
+
+COUNTER 
+
+***********/
+
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+i {
+  font-size: 20px !Important;
+}
+
 
 /*.mainpage_categories {
 	margin-top: 50px;

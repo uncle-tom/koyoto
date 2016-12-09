@@ -13,7 +13,9 @@ angular
     'pascalprecht.translate',
     'youtube-embed',
     'ngSanitize',
-    'ksSwiper'
+    'ksSwiper',
+    'countUpModule',
+    'scrollSpyModule'
   ])
   .config([
     '$stateProvider',

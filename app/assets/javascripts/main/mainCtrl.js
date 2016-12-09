@@ -99,4 +99,6 @@ function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, n
       description: "Разработчик"
     }
   ]
+
+  
 }
