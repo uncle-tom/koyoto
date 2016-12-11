@@ -1363,11 +1363,15 @@ footer a:hover {
 	padding: 0px;
 }
 
+#createpage	.desctiption {
+  text-align: justify;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
 /****************
 	SideBar
 ****************/
-
-
 
 .sticky {
   position: fixed;
