@@ -25,6 +25,8 @@
     "wowjs": "latest",
     "angular-youtube-mb": "latest",
     "angular-sticky-box": "latest",
-    "ngSticky": "latest"
+    "ngSticky": "latest",
+    "Scrollify": "latest",
+    "angular-scrollify": "latest"
   }
 }

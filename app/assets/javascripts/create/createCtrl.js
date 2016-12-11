@@ -10,7 +10,7 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
     	name: 'Сайт-визитка',
 	    slogan: 'Заявите о себе - начните продавать в интернете!',
 	    seotitle: 'Заказать сайт-визитку под ключ',
-	    img: 'http://imprimatur.artlebedev.ru/f/1/features/geo-vbank.jpg',
+	    img: 'assets/test-delete.jpg',
 	    include: [
 	    	{i: 'Уникальный дизайн'},
 		    {i: 'Внутренняя seo-оптимизация'}

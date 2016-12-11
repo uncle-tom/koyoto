@@ -41,6 +41,7 @@
 //= require angular-aria
 //= require angular-material
 //= require wowjs
+//= require Scrollify
 //= require angular-youtube-mb
 //= require swiper
 //= require angular-swiper
