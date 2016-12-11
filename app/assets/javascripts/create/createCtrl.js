@@ -22,7 +22,7 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
     	name: 'Промо-сайт',
   		slogan: 'Качественный сайт - успешный бизнес!',
 	    seotitle: 'Заказать промо-сайт прямо сейчас',
-	    img: 'http://imprimatur.artlebedev.ru/f/1/features/geo-vbank.jpg',
+	    img: 'assets/create/promo.jpg',
 	    include: [
 	    	{i: 'Уникальный дизайн'},
 		    {i: 'Внутренняя seo-оптимизация'},
@@ -38,7 +38,7 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
     	name: 'Landing Page',
   		slogan: 'Универсальное и эффективное решение!',
 	    seotitle: 'Заказать Landing Page',
-	    img: 'http://imprimatur.artlebedev.ru/f/1/features/geo-vbank.jpg',
+	    img: 'assets/create/landing.jpg',
 	    include: [
 	    	{i: 'Уникальный дизайн'},
 		    {i: 'Индивидуальный подход'}
@@ -50,7 +50,7 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
     	name: 'Корпоративный',
   		slogan: 'Ваш сайт - лицо компании!',
 	    seotitle: 'Заказать сайт-визитку под ключ',
-	    img: 'http://imprimatur.artlebedev.ru/f/1/features/geo-vbank.jpg',
+	    img: 'assets/create/corp.jpg',
 	    include: [
 	    	{i: 'Уникальный дизайн'},
 		    {i: 'Внутренняя seo-оптимизация'}
@@ -62,7 +62,7 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
     	name: 'Интернет-магазин',
   		slogan: 'Продавать в интернете так легко!',
 	    seotitle: 'Заказать сайт-визитку под ключ',
-	    img: 'http://imprimatur.artlebedev.ru/f/1/features/geo-vbank.jpg',
+	    img: 'assets/create/store.jpg',
 	    include: [
 	    	{i: 'Уникальный дизайн'},
 		    {i: 'Внутренняя seo-оптимизация'}
