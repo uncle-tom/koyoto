@@ -31,7 +31,7 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
 		    {i: '20% скидка на продвижение'}
 	    ],
 	    seotext: 'Чтобы продать свой товар или услугу необходимо выделиться из толпы. Промо-сайт идеальный инструмент для этого.',
-	    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti necessitatibus impedit saepe, repellendus reprehenderit voluptatibus aliquid architecto. Libero possimus quidem, alias, ipsam molestiae aliquam, voluptates error, enim debitis molestias exercitationem.'
+	    description: 'Промо-сайт идеальный вариант, если вы хотите прорекламировать свою услугу, либо показать посетителям свой новый товар, который вызывет восторг у пользователей. На сайте встроены несколько полезных функций, которые позволят продемонстрировать ваши лучшие качества, а потенциальным клиентам получить всю доступную информацию.'
   	
   	},
     {
@@ -43,8 +43,8 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
 	    	{i: 'Уникальный дизайн'},
 		    {i: 'Индивидуальный подход'}
 	    ],
-	    seotext: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ipsam nesciunt suscipit ut nemo quidem.',
-	    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti necessitatibus impedit saepe, repellendus reprehenderit voluptatibus aliquid architecto. Libero possimus quidem, alias, ipsam molestiae aliquam, voluptates error, enim debitis molestias exercitationem.'
+	    seotext: 'Landing Page позволяет повысить вашу конверсию более чем на 30%',
+	    description: 'Основная задача Посадочной страницы - привлечь, как можно больше клиентов. Грамотное построение структуры помогает настроить гостя на дружеский лад и сагитировать к принятию нужного для вас решения - оформить заказ. Landing Page это настоящее оружие в руках умелого маркетолога. Хотите увеличить продажи? Закажите Landing Page!'
   	},
     {
     	name: 'Корпоративный',
