@@ -698,6 +698,9 @@ COUNTER
 
 ***********/
 
+.count h3 {
+}
+
 .counter {
   animation-duration: 1s;
   animation-delay: 0s;
@@ -706,6 +709,14 @@ COUNTER
 i {
   font-size: 20px !Important;
 }
+
+/********
+
+ORDER
+
+********/
+
+
 
 
 /*.mainpage_categories {

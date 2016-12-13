@@ -55,8 +55,8 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
 	    	{i: 'Уникальный дизайн'},
 		    {i: 'Внутренняя seo-оптимизация'}
 	    ],
-	    seotext: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ipsam nesciunt suscipit ut nemo quidem.',
-	    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti necessitatibus impedit saepe, repellendus reprehenderit voluptatibus aliquid architecto. Libero possimus quidem, alias, ipsam molestiae aliquam, voluptates error, enim debitis molestias exercitationem.'
+	    seotext: 'Корпоративный сайт идеальный вариант для любой компании.',
+	    description: 'Это много функциональный сайт, который позволить решить любую вашу задачу. Необходимо добавить новость компании? В админке подготовлен удобный функционал. Хотите обновить вакансии компании? Сделать это можно в два клика. Как итог, вы получаете сайт, который полностью будет соответствовать потребностям вашей компании.'
   	},
     {
     	name: 'Интернет-магазин',
@@ -67,8 +67,8 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
 	    	{i: 'Уникальный дизайн'},
 		    {i: 'Внутренняя seo-оптимизация'}
 	    ],
-	    seotext: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ipsam nesciunt suscipit ut nemo quidem.',
-	    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti necessitatibus impedit saepe, repellendus reprehenderit voluptatibus aliquid architecto. Libero possimus quidem, alias, ipsam molestiae aliquam, voluptates error, enim debitis molestias exercitationem.'
+	    seotext: 'За один год примерно 3,7 миллионов украинцев покупали в интернете. И эта цифра стремительно растет!',
+	    description: 'Разработанный нами интернет-магазин позволит сразу вам же начать продавать в интернете. Отлаженная система работы помогает нам создавать идеальные интернет-магазины - практически восьмое чудо света. Не стоит лишний раз говорить, какие перспективы у онлайн-продаж, вы и сами слышали про эти невероятные цифры. Убедитесь на собственном опыте, создайте интернет-магазин! '
   	},
   ];
 

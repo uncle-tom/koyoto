@@ -76,9 +76,9 @@ function smmCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth, $s
   }
 
   
-  // $.scrollify({
-  //   section:".example-classname",
-  //   scrollSpeed: 700,
-  // });
-  
+  $.scrollify({
+    section:".example-classname",
+    scrollSpeed: 700,
+  });
+
 }

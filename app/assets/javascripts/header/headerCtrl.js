@@ -12,4 +12,6 @@ function headerCtrl($scope, $http, $localStorage, $sessionStorage, Auth, $stateP
     console.log('click')
     $translate.use(key);
   };
+
+  $scope.order_site = 'vizitka';
 }
