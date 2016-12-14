@@ -62,7 +62,13 @@ angular
       .state('smm', {
         url: '/smm', 
         controller: 'smmCtrl',
-        templateUrl: 'smm/index.html'
+        templateUrl: 'smm/index.html',
+        onEnter: function(){
+          $.scrollify.enable();
+        },
+        onExit: function(){
+          $.scrollify.disable();
+        }
       });
       $urlRouterProvider.otherwise('/');
 

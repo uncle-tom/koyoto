@@ -55,6 +55,17 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
       float: "left",
       margin: "0px -15px 0px 15px",
       bg: "rgba(255, 218, 168, 0.49)"
+    },
+    {
+      name: "Ваш новый проект",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
+      photo: "assets/portfolio/you.jpg",
+      type: "Идеальный сайт",
+      href: "http://scooter-remont.com/",
+      float: "left",
+      margin: "0px -15px 0px 15px",
+      bg: "rgba(255, 218, 168, 0.49)",
+      myclass: "last-child_portfolio"
     }
     
   ]

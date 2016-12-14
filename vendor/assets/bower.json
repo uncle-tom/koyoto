@@ -27,6 +27,7 @@
     "angular-sticky-box": "latest",
     "ngSticky": "latest",
     "Scrollify": "latest",
-    "angular-scrollify": "latest"
+    "angular-scrollify": "latest",
+    "fullpage.js": "latest"
   }
 }

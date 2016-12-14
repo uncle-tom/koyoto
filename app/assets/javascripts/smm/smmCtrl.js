@@ -74,7 +74,6 @@ function smmCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth, $s
   $scope.isSelected = function(section) {
     return $scope.selected === section;
   }
-
   
   $.scrollify({
     section:".example-classname",
