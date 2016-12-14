@@ -141,6 +141,10 @@
 	/*********
 		contactpage
 	*********/
+
+	.contactpage {
+		background: url('mobile/bg-contact.jpg');
+	}
 	.contactpage_text {
 		padding: 80px 10px !important;
 	}
@@ -170,6 +174,10 @@
 	/*********
 	 aboutpage
 	*********/
+	.aboutpage {
+		background: url('mobile/bg-about.jpg') !important;
+	  background-size: cover !important;
+	}
 	.aboutpage_text {
 		padding: 50px 20px !important;
 	}
@@ -401,7 +409,7 @@ header:hover {
 }
 
 .welcome {
-	background: url('http://haroldkmorris.com/wp-content/uploads/IngredientsPost.jpg');
+	background: url('main.jpg');
 	background-size: cover;
 	background-position: 50% 0%;
 }
