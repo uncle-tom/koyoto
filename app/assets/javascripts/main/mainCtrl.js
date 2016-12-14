@@ -100,5 +100,14 @@ function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, n
     }
   ]
 
+  var width = document.body.clientWidth;
+  if (width > 600){
+    $scope.probnik3 = 'assets/probnik3.png'; 
+    $scope.zagotovka3 = 'assets/zagotovka3.png'; 
+  } else {
+    $scope.probnik3 = 'assets/mobile/probnik3.png';
+    $scope.zagotovka3 = 'assets/mobile/zagotovka3.png';  
+  }
+  
   
 }

@@ -69,7 +69,7 @@
 		<div class="margin50"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<img src="assets/probnik3.png" alt="">
+				<img ng-src="	{{probnik3}}" alt="">
 				<p><span class="example-site" ng-click="openexample(); vizitkaopen = true" >Посмотреть пример сайта</span></p>
 			</div>
 		</div>
@@ -156,7 +156,8 @@
 		<div class="margin50"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<span class="imac">
+				<img class="mobile-show" src="assets/mobile/iMac.png" alt="">
+				<span class="imac pc-show">
 					<span class="imac-landing"></span>
 				</span>
 				<p><span class="example-site">Посмотреть пример сайта</span></p>
@@ -198,7 +199,8 @@
 		<div class="margin50"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<div class="slider">
+				<img class="mobile-show" src="assets/mobile/mac.png" alt="">
+				<div class="slider pc-show">
 					<ks-swiper-container override-parameters="{'effect':'fade'}" initial-slide="3" data-swiper-autoplay="2000" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="5" pagination-clickable="false">
 				    <ks-swiper-slide class="swiper-slide" ng-repeat="s in slider">
 				        <img ng-src="{{s.image}}">
@@ -244,7 +246,7 @@
 		<div class="margin50"></div>
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<img src="assets/zagotovka3.png" alt="">
+				<img ng-src="{{zagotovka3}}" alt="">
 				<p><span class="example-site">Посмотреть пример сайта</span></p>
 			</div>
 		</div>

@@ -42,6 +42,10 @@
 		display: block;
 		margin: auto;
 	}
+
+	#landing img {
+		width: 100% !important;
+	}
 	/*
 	MOBILE HEADER
 	*/
@@ -143,7 +147,8 @@
 	*********/
 
 	.contactpage {
-		background: url('mobile/bg-contact.jpg');
+		background: url('mobile/bg-contact.jpg') !important;
+		background-size: cover !important;
 	}
 	.contactpage_text {
 		padding: 80px 10px !important;
