@@ -191,13 +191,29 @@
 	}
 
 	/*********
-	 seopage
+	
 	*********/
 	.welcome-text h1 {
 		font-size: 32px !important;
 	}
 	.photoblock p {
 		width: 100% !important;
+	}
+
+	/*********
+	 smmpage
+	*********/
+	#smm .title {
+		font-size: 32px !important;
+	}
+
+	#smm .description {
+		font-size: 18px;
+	}
+
+	#mainsmm {
+		background: url('mobile/smm.jpg') !important;
+		background-size: cover !important;
 	}
 }
 

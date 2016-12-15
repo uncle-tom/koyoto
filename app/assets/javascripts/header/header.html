@@ -162,40 +162,78 @@
 <div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Напишите нам</h4>
-      </div>
       <div class="modal-body">
-      	<div class="container">
-					<div class="row input-container">
-							<div class="col-xs-12">
-								<div class="styled-input wide">
-									<input type="text" required />
-									<label>Name</label> 
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-12">
-								<div class="styled-input">
-									<input type="text" required />
-									<label>Email</label> 
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-12">
-								<div class="styled-input" style="float:right;">
-									<input type="text" required />
-									<label>Phone Number</label> 
-								</div>
-							</div>
-							<div class="col-xs-12">
-								<div class="styled-input wide">
-									<textarea required></textarea>
-									<label>Message</label>
-								</div>
-							</div>
-							<div class="col-xs-12">
-								<div class="btn-lrg submit-btn">Send Message</div>
-							</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div>
+							<md-input-container class="md-block">
+		            <label>Ваше имя</label>
+		            <input ng-model="user.firstName">
+		          </md-input-container>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div>
+							<md-input-container class="md-block">
+		            <label>Email или телефон для связи</label>
+		            <input ng-model="user.firstName">
+		          </md-input-container>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div>
+							<p>Создание сайтов:</p>
+								<md-checkbox ng-model="" aria-label="Checkbox 1">
+			          	Сайт- визитка
+			          </md-checkbox>
+			          <md-checkbox ng-model="" aria-label="Checkbox 1">
+			          	Промо-сайт
+			          </md-checkbox>
+			          <md-checkbox ng-model="" aria-label="Checkbox 1">
+			          	Langing Page
+			          </md-checkbox>
+			          <md-checkbox ng-model="" aria-label="Checkbox 1">
+			          	Корпоративный
+			          </md-checkbox>
+			          <md-checkbox ng-model="" aria-label="Checkbox 1">
+			          	Интернет-магазин
+			          </md-checkbox>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div>
+							<p>SEO:</p>
+							<md-checkbox ng-model="" aria-label="Checkbox 1">
+			          	SEO-Аудит
+			          </md-checkbox>
+			          <md-checkbox ng-model="" aria-label="Checkbox 1">
+			          	Внутренняя оптимизация
+			          </md-checkbox>
+			          <md-checkbox ng-model="" aria-label="Checkbox 1">
+			          	Комплексное продвижение
+			          </md-checkbox>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div>
+							<p>SMM:</p>
+								<md-checkbox ng-model="" aria-label="Checkbox 1">
+			          	Facebook
+			          </md-checkbox>
+			          <br>
+			          <md-checkbox ng-model="" aria-label="Checkbox 1">
+			          	VK
+			          </md-checkbox>
+			          <br>
+			          <md-checkbox ng-model="" aria-label="Checkbox 1">
+			          	Instagram
+			          </md-checkbox>
+			          <md-checkbox ng-model="" aria-label="Checkbox 1">
+			          	Комплексное продвижение
+			          </md-checkbox>
+						</div>
 					</div>
 				</div>
       </div>
