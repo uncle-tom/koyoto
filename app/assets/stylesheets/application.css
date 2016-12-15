@@ -142,6 +142,14 @@
 		width: 100%;
 	}
 
+	#mainseo {
+		background: url('mobile/seo.jpg') !important;
+		background-size: cover !important 
+	}
+	#mainseo .welcome-seo {
+		background-color: rgba(0,0,0,0.75) !important;		
+	}
+
 	/*********
 		contactpage
 	*********/
