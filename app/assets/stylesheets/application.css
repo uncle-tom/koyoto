@@ -902,6 +902,13 @@ footer h4 {
 	color: #ffffff !important;
 }
 
+md-checkbox.md-checked .md-ink-ripple {
+	color: rgba(99, 255, 64, 0.7) !important;
+}
+md-checkbox.md-checked .md-icon {
+	background-color: hsla(112,68%,45%,1) !important;
+}
+
 .product {
 	text-align: center;
 	margin-top: 10px;

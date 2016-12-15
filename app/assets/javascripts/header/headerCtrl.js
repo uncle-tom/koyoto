@@ -1,7 +1,7 @@
 angular.module('MyStore').controller('headerCtrl', 
-  ['$scope', '$http', '$localStorage', '$sessionStorage', 'Auth', '$stateParams', '$location', '$translate', 'Product', headerCtrl]);
+  ['$scope', '$http', '$localStorage', '$sessionStorage', 'Auth', '$stateParams', '$location', '$translate', 'Product', 'Order', headerCtrl]);
 
-function headerCtrl($scope, $http, $localStorage, $sessionStorage, Auth, $stateParams, $location, $translate, Product) {
+function headerCtrl($scope, $http, $localStorage, $sessionStorage, Auth, $stateParams, $location, $translate, Product, Order) {
 	console.log('headerCtrl');
 	
 	$scope.isActive = function (viewLocation) { 
@@ -17,7 +17,7 @@ function headerCtrl($scope, $http, $localStorage, $sessionStorage, Auth, $stateP
 
   $scope.newOrder  = new Order({order_id: $stateParams.id});
   
-  $scope.send_order() = function() {
+  $scope.send_order = function() {
     Order.save({ order_id: $stateParams.id, order: $scope.newOrder,  }, function(response) {
 
     });
