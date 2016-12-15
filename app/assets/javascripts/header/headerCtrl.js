@@ -14,4 +14,12 @@ function headerCtrl($scope, $http, $localStorage, $sessionStorage, Auth, $stateP
   };
 
   $scope.order_site = 'vizitka';
+
+  $scope.newOrder  = new Order({order_id: $stateParams.id});
+  
+  $scope.send_order() = function() {
+    Order.save({ order_id: $stateParams.id, order: $scope.newOrder,  }, function(response) {
+
+    });
+  };
 }

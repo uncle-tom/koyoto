@@ -330,6 +330,10 @@ md-content.md-default-theme, md-content {
 	background: #fff;
 }
 
+.modal-footer {
+	border-top: 0px;
+}
+
 .swiper-pagination {
 	position: relative;
 }

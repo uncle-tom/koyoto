@@ -168,7 +168,7 @@
 						<div>
 							<md-input-container class="md-block">
 		            <label>Ваше имя</label>
-		            <input ng-model="user.firstName">
+		            <input ng-model="order.name">
 		          </md-input-container>
 						</div>
 					</div>
@@ -176,7 +176,7 @@
 						<div>
 							<md-input-container class="md-block">
 		            <label>Email или телефон для связи</label>
-		            <input ng-model="user.firstName">
+		            <input ng-model="order.contact">
 		          </md-input-container>
 						</div>
 					</div>
@@ -188,16 +188,16 @@
 							<md-checkbox ng-model="order.vizitka" aria-label="Checkbox 1">
 		          	Сайт- визитка
 		          </md-checkbox>
-		          <md-checkbox ng-model="" aria-label="Checkbox 1">
+		          <md-checkbox ng-model="order.promo" aria-label="Checkbox 1">
 		          	Промо-сайт
 		          </md-checkbox>
-		          <md-checkbox ng-model="" aria-label="Checkbox 1">
+		          <md-checkbox ng-model="order.landing" aria-label="Checkbox 1">
 		          	Langing Page
 		          </md-checkbox>
-		          <md-checkbox ng-model="" aria-label="Checkbox 1">
+		          <md-checkbox ng-model="order.corp" aria-label="Checkbox 1">
 		          	Корпоративный
 		          </md-checkbox>
-		          <md-checkbox ng-model="" aria-label="Checkbox 1">
+		          <md-checkbox ng-model="order.store" aria-label="Checkbox 1">
 		          	Интернет-магазин
 		          </md-checkbox>
 						</div>
@@ -205,13 +205,13 @@
 					<div class="col-md-4">
 						<div>
 							<p>SEO:</p>
-							<md-checkbox ng-model="" aria-label="Checkbox 1">
+							<md-checkbox ng-model="order.audit" aria-label="Checkbox 1">
 		          	SEO-Аудит
 		          </md-checkbox>
-		          <md-checkbox ng-model="" aria-label="Checkbox 1">
+		          <md-checkbox ng-model="order.inner" aria-label="Checkbox 1">
 		          	Внутренняя оптимизация
 		          </md-checkbox>
-		          <md-checkbox ng-model="" aria-label="Checkbox 1">
+		          <md-checkbox ng-model="order.seocomplex" aria-label="Checkbox 1">
 		          	Комплексное продвижение
 		          </md-checkbox>
 						</div>
@@ -219,18 +219,18 @@
 					<div class="col-md-4">
 						<div>
 							<p>SMM:</p>
-							<md-checkbox ng-model="" aria-label="Checkbox 1">
+							<md-checkbox ng-model="order.facebook" aria-label="Checkbox 1">
 		          	Facebook
 		          </md-checkbox>
 		          <br>
-		          <md-checkbox ng-model="" aria-label="Checkbox 1">
+		          <md-checkbox ng-model="order.vk" aria-label="Checkbox 1">
 		          	VK
 		          </md-checkbox>
 		          <br>
-		          <md-checkbox ng-model="" aria-label="Checkbox 1">
+		          <md-checkbox ng-model="order.instagram" aria-label="Checkbox 1">
 		          	Instagram
 		          </md-checkbox>
-		          <md-checkbox ng-model="" aria-label="Checkbox 1">
+		          <md-checkbox ng-model="order.smmcomplex" aria-label="Checkbox 1">
 		          	Комплексное продвижение
 		          </md-checkbox>
 						</div>
@@ -241,15 +241,16 @@
 						<div>
 							<md-input-container class="md-block">
 			          <label>Ваше сообщение</label>
-			          <textarea ng-model="user.biography" rows="5" md-select-on-focus></textarea>
+			          <textarea ng-model="order.message" rows="5" md-select-on-focus></textarea>
 			        </md-input-container>
 						</div>
 					</div>
 				</div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-        <button type="button" class="btn btn-primary">Отправить</button>
+      	<md-button class="md-raised" data-dismiss="modal">Закрыть</md-button>
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button> -->
+        <md-button ng-click="send_order()" class="md-raised md-primary">Отправить</md-button>
       </div>
     </div>
   </div>
