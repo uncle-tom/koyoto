@@ -11,7 +11,6 @@ function headerCtrl($scope, $http, $localStorage, $sessionStorage, Auth, $stateP
   };
 
   $scope.changeLanguage = function (key) {
-    console.log('click')
     $translate.use(key);
   };
 

@@ -3,6 +3,8 @@ class OrdersController < ApplicationController
 
   skip_before_action :verify_authenticity_token
 
+  after_create :send_notification
+
   inherit_resources
 
   def show
@@ -15,6 +17,10 @@ class OrdersController < ApplicationController
   end
 
 protected
+
+  def send_notification
+    NewOrderMailer.created_order(@order).deliver_now
+  end
 
   def order_params
     params.require(:order).permit(:id, :vizitka, :promo, :landing, :corp, 
