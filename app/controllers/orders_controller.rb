@@ -5,20 +5,11 @@ class OrdersController < ApplicationController
 
   inherit_resources
 
-  def index
-    index! do |format|
-      format.html { render }
-      format.json do
-        render json: @orders.as_json(include: {invoice_items: {methods: :product_name}, address: {}})
-      end
-    end
-  end
-
   def show
     show! do |format|
       format.html { render }
       format.json do
-        render json: @order.as_json(include: {invoice_items: {methods: :product_name}, address: {}})
+        render json: @order
       end
     end
   end
@@ -26,7 +17,8 @@ class OrdersController < ApplicationController
 protected
 
   def order_params
-    params.permit(:id, :subtotal, :total, :discount, :address_id, 
-      :shipping_id, :user_id, :payment_type, :delivery_type, :order_status)
+    params.require(:order).permit(:id, :vizitka, :promo, :landing, :corp, 
+      :store, :audit, :inner, :seocomplex, :facebook, :vk, :smmcomplex, 
+      :instagram, :promocode, :name, :message)
   end
 end

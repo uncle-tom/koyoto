@@ -1,261 +1,267 @@
-<div class="logo logo-show">
-	<a href="/"><img src="assets/logo.png" alt=""></a>
-</div>
-<div class="mobile-menu">
-	<div class="mobile-nav">
-		<p><a href="#">Услуги</a></p>
-		<p><a href="/portfolio">Портфолио</a></p>
-		<p><a href="/price">Цены</a></p>
-		<p><a href="/contact">Контакты</a></p>
-		<p><a href="/about">О компании</a></p>
+<div ng-controller="headerCtrl">
+	<div class="logo logo-show">
+		<a href="/"><img src="assets/logo.png" alt=""></a>
 	</div>
-</div>
-<header class="nav-down">
-<div class="div"></div>
-<nav class="header" ng-controller="headerCtrl">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="brand pull-left">
-				<div class="logo">
-					<img src="assets/logo.png" alt="">
+	<div class="mobile-menu">
+		<div class="mobile-nav">
+			<p><a href="#">Услуги</a></p>
+			<p><a href="/portfolio">Портфолио</a></p>
+			<p><a href="/price">Цены</a></p>
+			<p><a href="/contact">Контакты</a></p>
+			<p><a href="/about">О компании</a></p>
+		</div>
+	</div>
+	<header class="nav-down">
+	<div class="div"></div>
+	<nav class="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="brand pull-left">
+					<div class="logo">
+						<img src="assets/logo.png" alt="">
+					</div>
+					<li><a href="/"> KOYOTO Studio</a></li>
 				</div>
-				<li><a href="/"> KOYOTO Studio</a></li>
-			</div>
-			<div class="mobile-toogle-menu pull-right">
-				<div id="nav-icon1">
-				  <span></span>
-				  <span></span>
-				  <span></span>
-				</div>
-			</div>
-			<!-- <div class="togglemenu pull-right">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        	<span class="sr-only">Toggle navigation</span>
-        	<span class="icon-bar"></span>
-        	<span class="icon-bar"></span>
-        	<span class="icon-bar"></span>
-      	</button>
-			</div> -->
-			
-			<div class="navigation pull-right">
-				<ul class="collapse navbar-collapse navigation nav-mobile" id="bs-example-navbar-collapse-1">
-				<!-- МОБИЛЬНЫЙ -->
-				<div class="mobile-show">
-					<div class="row">
-						<div class="col-xs-3">
-							<img src="/assets/icon/search.png" alt="">
-						</div>
-						<div class="col-xs-9">
-							<h2><a href="">Услуги</a></h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-3">
-							<img src="/assets/icon/locating.png" alt="">
-						</div>
-						<div class="col-xs-9">
-							<h2><a href="/portfolio">Портфолио</a></h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-3">
-							<img src="/assets/icon/search.png" alt="">
-						</div>
-						<div class="col-xs-9">
-							<h2><a href="/price">Цены</a></h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-3">
-							<img src="/assets/icon/e-commerce-like-heart.png" alt="">
-						</div>
-						<div class="col-xs-9">
-							<h2><a href="/contact">Контакты</a></h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-3">
-							<img src="/assets/icon/locating.png" alt="">
-						</div>
-						<div class="col-xs-9">
-							<h2><a href="/about">О компании</a></h2>	
-						</div>
+				<div class="mobile-toogle-menu pull-right">
+					<div id="nav-icon1">
+					  <span></span>
+					  <span></span>
+					  <span></span>
 					</div>
 				</div>
-				<!-- Мобильный END -->
+				<!-- <div class="togglemenu pull-right">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        	<span class="sr-only">Toggle navigation</span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	      	</button>
+				</div> -->
+				
+				<div class="navigation pull-right">
+					<ul class="collapse navbar-collapse navigation nav-mobile" id="bs-example-navbar-collapse-1">
+					<!-- МОБИЛЬНЫЙ -->
+					<div class="mobile-show">
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="/assets/icon/search.png" alt="">
+							</div>
+							<div class="col-xs-9">
+								<h2><a href="">Услуги</a></h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="/assets/icon/locating.png" alt="">
+							</div>
+							<div class="col-xs-9">
+								<h2><a href="/portfolio">Портфолио</a></h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="/assets/icon/search.png" alt="">
+							</div>
+							<div class="col-xs-9">
+								<h2><a href="/price">Цены</a></h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="/assets/icon/e-commerce-like-heart.png" alt="">
+							</div>
+							<div class="col-xs-9">
+								<h2><a href="/contact">Контакты</a></h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="/assets/icon/locating.png" alt="">
+							</div>
+							<div class="col-xs-9">
+								<h2><a href="/about">О компании</a></h2>	
+							</div>
+						</div>
+					</div>
+					<!-- Мобильный END -->
 
-				<div class="pc-show">
-					<div id="clothesdrop">
-						<li id="clothesheader">
-							<a href="">Услуги</a>
-						</li>
-						<div id="clothesheaderopen">
-							<div class="container">
-								<div class="row" style="margin:auto">
-									<div class="col-md-12">
-										<a href="/create"><div class="col-md-4 uslugi-create">
-											<h3>Создание сайтов</h3>
-											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Сайт-визитка</p>
-											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Промо сайт</p>
-											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Landing Page</p>
-											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Корпоративный сайт</p>
-											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Интернет-магазин</p>
-										</div></a>
-										<a href="/seo"><div class="col-md-4 uslugi-seo">
-											<h3>SEO-Продвижение</h3>
-											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> SEO-Аудит</p>
-											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Внутренняя оптимизация</p>
-											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Комплексное продвижение</p>
-										</div></a>
-										<a href="/smm"><div class="col-md-4 uslugi-smm">
-											<h3>SMM-Продвижение</h3>
-											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Facebook</p>
-											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Vk</p>
-											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Instagram</p>
-											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Комплексное продвижение</p>
-										</div></a>
+					<div class="pc-show">
+						<div id="clothesdrop">
+							<li id="clothesheader">
+								<a href="">Услуги</a>
+							</li>
+							<div id="clothesheaderopen">
+								<div class="container">
+									<div class="row" style="margin:auto">
+										<div class="col-md-12">
+											<a href="/create"><div class="col-md-4 uslugi-create">
+												<h3>Создание сайтов</h3>
+												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Сайт-визитка</p>
+												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Промо сайт</p>
+												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Landing Page</p>
+												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Корпоративный сайт</p>
+												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Интернет-магазин</p>
+											</div></a>
+											<a href="/seo"><div class="col-md-4 uslugi-seo">
+												<h3>SEO-Продвижение</h3>
+												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> SEO-Аудит</p>
+												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Внутренняя оптимизация</p>
+												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Комплексное продвижение</p>
+											</div></a>
+											<a href="/smm"><div class="col-md-4 uslugi-smm">
+												<h3>SMM-Продвижение</h3>
+												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Facebook</p>
+												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Vk</p>
+												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Instagram</p>
+												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Комплексное продвижение</p>
+											</div></a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div id="accdrop">
-						<li id="accheader">
-							<a href="/portfolio">Портфолио</a>
-						</li>
-						<!-- <div id="accheaderopen" class="container">
-							<div class="row">
-								<div class="col-md-3">
-									<img src="https://shopit-dunebuggysrl.netdna-ssl.com/shop/media/catalog/category/woman.jpg" alt="">
+						<div id="accdrop">
+							<li id="accheader">
+								<a href="/portfolio">Портфолио</a>
+							</li>
+							<!-- <div id="accheaderopen" class="container">
+								<div class="row">
+									<div class="col-md-3">
+										<img src="https://shopit-dunebuggysrl.netdna-ssl.com/shop/media/catalog/category/woman.jpg" alt="">
+									</div>
+									<div class="col-md-9">
+										<h2>Аксессуары</h2>
+									</div>
 								</div>
-								<div class="col-md-9">
-									<h2>Аксессуары</h2>
-								</div>
-							</div>
-						</div> -->
+							</div> -->
+						</div>
+						<div id="div">
+							<li id="#">
+								<a href="/price">Цены</a>
+							</li>
+						</div>
+						<div id="div">
+							<li id="#">
+								<a href="/contact">Контакты</a>
+							</li>
+						</div>
+						<div id="div">
+							<li id="#">
+								<a href="/about">О компании</a>
+							</li>
+						</div>
 					</div>
-					<div id="div">
-						<li id="#">
-							<a href="/price">Цены</a>
-						</li>
-					</div>
-					<div id="div">
-						<li id="#">
-							<a href="/contact">Контакты</a>
-						</li>
-					</div>
-					<div id="div">
-						<li id="#">
-							<a href="/about">О компании</a>
-						</li>
-					</div>
+					</ul>
 				</div>
-				</ul>
 			</div>
 		</div>
+	</nav>
+	</header>
+
+	<!-- Заказ-model1 -->
+
+	<div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div>
+								<md-input-container class="md-block">
+			            <label>Ваше имя</label>
+			            <input ng-model="newOrder.name">
+			          </md-input-container>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div>
+								<md-input-container class="md-block">
+			            <label>Email или телефон для связи</label>
+			            <input ng-model="newOrder.contact">
+			          </md-input-container>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div>
+								<p>Создание сайтов:</p>
+								<md-checkbox ng-model="newOrder.vizitka" aria-label="Checkbox 1">
+			          	Сайт- визитка
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.promo" aria-label="Checkbox 1">
+			          	Промо-сайт
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.landing" aria-label="Checkbox 1">
+			          	Langing Page
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.corp" aria-label="Checkbox 1">
+			          	Корпоративный
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.store" aria-label="Checkbox 1">
+			          	Интернет-магазин
+			          </md-checkbox>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div>
+								<p>SEO:</p>
+								<md-checkbox ng-model="newOrder.audit" aria-label="Checkbox 1">
+			          	SEO-Аудит
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.inner" aria-label="Checkbox 1">
+			          	Внутренняя оптимизация
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.seocomplex" aria-label="Checkbox 1">
+			          	Комплексное продвижение
+			          </md-checkbox>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div>
+								<p>SMM:</p>
+								<md-checkbox ng-model="newOrder.facebook" aria-label="Checkbox 1">
+			          	Facebook
+			          </md-checkbox>
+			          <br>
+			          <md-checkbox ng-model="newOrder.vk" aria-label="Checkbox 1">
+			          	VK
+			          </md-checkbox>
+			          <br>
+			          <md-checkbox ng-model="newOrder.instagram" aria-label="Checkbox 1">
+			          	Instagram
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.smmcomplex" aria-label="Checkbox 1">
+			          	Комплексное продвижение
+			          </md-checkbox>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div>
+								<md-input-container class="md-block">
+			            <label>Как вас зовут?</label>
+			            <input ng-model="newOrder.name">
+			          </md-input-container>
+								<md-input-container class="md-block">
+			            <label>Промо-код</label>
+			            <input ng-model="newOrder.promocode">
+			          </md-input-container>
+								<md-input-container class="md-block">
+				          <label>Ваше сообщение</label>
+				          <textarea ng-model="newOrder.message" rows="5" md-select-on-focus></textarea>
+				        </md-input-container>
+							</div>
+						</div>
+					</div>
+	      </div>
+	      <div class="modal-footer">
+	      	<md-button class="md-raised" data-dismiss="modal">Закрыть</md-button>
+	        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button> -->
+	        <md-button type="submit" ng-click="send_order()" class="md-raised md-primary">Отправить</md-button>
+	      </div>
+	    </div>
+	  </div>
 	</div>
-</nav>
-</header>
-
-<!-- Заказ-model1 -->
-
-<div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-				<div class="row">
-					<div class="col-md-6">
-						<div>
-							<md-input-container class="md-block">
-		            <label>Ваше имя</label>
-		            <input ng-model="order.name">
-		          </md-input-container>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div>
-							<md-input-container class="md-block">
-		            <label>Email или телефон для связи</label>
-		            <input ng-model="order.contact">
-		          </md-input-container>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div>
-							<p>Создание сайтов:</p>
-							<md-checkbox ng-model="order.vizitka" aria-label="Checkbox 1">
-		          	Сайт- визитка
-		          </md-checkbox>
-		          <md-checkbox ng-model="order.promo" aria-label="Checkbox 1">
-		          	Промо-сайт
-		          </md-checkbox>
-		          <md-checkbox ng-model="order.landing" aria-label="Checkbox 1">
-		          	Langing Page
-		          </md-checkbox>
-		          <md-checkbox ng-model="order.corp" aria-label="Checkbox 1">
-		          	Корпоративный
-		          </md-checkbox>
-		          <md-checkbox ng-model="order.store" aria-label="Checkbox 1">
-		          	Интернет-магазин
-		          </md-checkbox>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div>
-							<p>SEO:</p>
-							<md-checkbox ng-model="order.audit" aria-label="Checkbox 1">
-		          	SEO-Аудит
-		          </md-checkbox>
-		          <md-checkbox ng-model="order.inner" aria-label="Checkbox 1">
-		          	Внутренняя оптимизация
-		          </md-checkbox>
-		          <md-checkbox ng-model="order.seocomplex" aria-label="Checkbox 1">
-		          	Комплексное продвижение
-		          </md-checkbox>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div>
-							<p>SMM:</p>
-							<md-checkbox ng-model="order.facebook" aria-label="Checkbox 1">
-		          	Facebook
-		          </md-checkbox>
-		          <br>
-		          <md-checkbox ng-model="order.vk" aria-label="Checkbox 1">
-		          	VK
-		          </md-checkbox>
-		          <br>
-		          <md-checkbox ng-model="order.instagram" aria-label="Checkbox 1">
-		          	Instagram
-		          </md-checkbox>
-		          <md-checkbox ng-model="order.smmcomplex" aria-label="Checkbox 1">
-		          	Комплексное продвижение
-		          </md-checkbox>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div>
-							<md-input-container class="md-block">
-		            <label>Промо-код</label>
-		            <input ng-model="order.promocode">
-		          </md-input-container>
-							<md-input-container class="md-block">
-			          <label>Ваше сообщение</label>
-			          <textarea ng-model="order.message" rows="5" md-select-on-focus></textarea>
-			        </md-input-container>
-						</div>
-					</div>
-				</div>
-      </div>
-      <div class="modal-footer">
-      	<md-button class="md-raised" data-dismiss="modal">Закрыть</md-button>
-        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button> -->
-        <md-button ng-click="send_order()" class="md-raised md-primary">Отправить</md-button>
-      </div>
-    </div>
-  </div>
 </div>

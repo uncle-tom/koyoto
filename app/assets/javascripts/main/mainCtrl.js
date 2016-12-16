@@ -66,9 +66,6 @@ function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, n
     }
   }
 
-
-
-
   $scope.openexample = function(){
     $('.example-window').fadeIn();
   }

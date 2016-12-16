@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160915155231) do
+ActiveRecord::Schema.define(version: 20161216160452) do
 
   create_table "addresses", force: :cascade do |t|
     t.integer  "order_id"
@@ -58,20 +58,22 @@ ActiveRecord::Schema.define(version: 20160915155231) do
   add_index "invoice_items", ["order_id"], name: "index_invoice_items_on_order_id"
 
   create_table "orders", force: :cascade do |t|
-    t.decimal  "subtotal"
-    t.decimal  "total"
-    t.decimal  "discount"
-    t.integer  "address_id"
-    t.integer  "user_id"
-    t.integer  "shipping_id"
-    t.datetime "created_at",                                     null: false
-    t.datetime "updated_at",                                     null: false
-    t.string   "payment_type",  default: "Оплата при получении", null: false
-    t.string   "order_status",  default: "В ожидании",           null: false
-    t.string   "delivery_type", default: "Самовывоз",            null: false
+    t.boolean "vizitka"
+    t.boolean "promo"
+    t.boolean "landing"
+    t.boolean "corp"
+    t.boolean "store"
+    t.boolean "audit"
+    t.boolean "inner"
+    t.boolean "seocomplex"
+    t.boolean "facebook"
+    t.boolean "vk"
+    t.boolean "smmcomplex"
+    t.boolean "instagram"
+    t.string  "promocode"
+    t.text    "message"
+    t.string  "name"
   end
-
-  add_index "orders", ["user_id"], name: "index_orders_on_user_id"
 
   create_table "photos", force: :cascade do |t|
     t.string   "image"
