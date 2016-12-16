@@ -77,26 +77,18 @@ function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, n
   }
   $scope.vizitkaopen = false;
 
-  $scope.vizitkaPortfolio = [
+  $scope.client = [
     {
-      name:"Флористика",
-      photo: "http://candyladyshop.ru/assets/img/team/team01.jpg",
-      description: "Директор"
+      img: "https://aweb.ua/assets/images/c_logos/atem.png"
     }, 
     {
-      name:"Одежда",
-      photo: "http://candyladyshop.ru/assets/img/team/team02.jpg",
-      description: "Курьер"
+      img: "https://aweb.ua/assets/images/c_logos/atem.png"
     },
     {
-      name:"Мебельный салон",
-      photo: "http://candyladyshop.ru/assets/img/team/team03.jpg",
-      description: "Быстроногий Гермес"
+      img: "https://aweb.ua/assets/images/c_logos/atem.png"
     },
     {
-      name:"Квест-комната",
-      photo: "http://candyladyshop.ru/assets/img/team/team04.jpg",
-      description: "Разработчик"
+      img: "https://aweb.ua/assets/images/c_logos/atem.png"
     }
   ]
 
