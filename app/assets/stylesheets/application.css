@@ -909,37 +909,17 @@ md-checkbox.md-checked .md-icon {
 	background-color: hsla(112,68%,45%,1) !important;
 }
 
-.product {
-	text-align: center;
-	margin-top: 10px;
-	min-height: 410px;
+.icon {
+	display: table-cell;
+	padding-right: 20px;
 }
-
-.product .product-name {
-	min-height: 77px;
-}
-
-.product h5 {
-	display: none;
-	position: absolute;
-  top: 28%;
-  left: 0;
-  right: 0;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.product p {
-	min-height: 80px;
-}
-
-.product a {
-	text-decoration: none;
+.our-uslugi { display: table-cell; }
+.our-uslugi h4 a {
+	font-weight: 700;
 	color: #000;
 }
-
-.product img {
-	width: 100%;
+.out-uslugi a {
+	color: ;
 }
 
 .background-photo {
@@ -948,25 +928,6 @@ md-checkbox.md-checked .md-icon {
 	background-position: 50% 50%;
 }
 
-.product .background-photo {
-	min-height: 500px;
-}
-
-.product .product-photo {
-	color: #fff;
-}
-
-.product .product-photo img {
-	opacity: 1;
-}
-
-.product .product-photo:hover img {
-	opacity: .5;
-}
-
-.product .product-photo:hover h5 {
-	display: block;
-}
 
 .button-more {
 	margin: 30px auto 50px auto;
