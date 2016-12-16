@@ -813,9 +813,8 @@ header:hover {
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-.client li {
-	float: left;
-}
+.client { display: inline-block; }
+.client li { padding: 20px; }
 
 #mainsmm {
 	background: url('smm.jpg');

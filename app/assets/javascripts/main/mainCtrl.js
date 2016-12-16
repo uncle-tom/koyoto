@@ -76,16 +76,16 @@ function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, n
 
   $scope.client = [
     {
-      img: "https://aweb.ua/assets/images/c_logos/atem.png"
+      img: "http://www.ua-football.com/img/interface-next/logo.png"
     }, 
     {
-      img: "https://aweb.ua/assets/images/c_logos/atem.png"
+      img: "http://krisol.kiev.ua/wp-content/uploads/2016/04/krisol-122222222png.png"
     },
     {
-      img: "https://aweb.ua/assets/images/c_logos/atem.png"
+      img: "http://scooter-remont.com/forum/styles/subsilver2/imageset/s-r6.gif"
     },
     {
-      img: "https://aweb.ua/assets/images/c_logos/atem.png"
+      img: "https://www.meteoprog.ua/images/meteoprog_logo.png"
     }
   ]
 
