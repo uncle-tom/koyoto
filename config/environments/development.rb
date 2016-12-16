@@ -43,8 +43,8 @@ Rails.application.configure do
     address:              'smtp.sendgrid.net',
     port:                 587,
     domain:               'koyotostudio.com',
-    user_name:            'remontuj.com.ua',
-    password:             '***********',
+    user_name:            'koyotostudio.com',
+    password:             '',
     authentication:       'plain',
     enable_starttls_auto: true  }
 end
