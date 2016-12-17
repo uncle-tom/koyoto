@@ -1093,6 +1093,10 @@ md-checkbox.md-checked .md-icon {
 	Uslugi
 ****************/
 
+#clothesheader {
+	padding-left: 200px;
+}
+
 #clothesheaderopen {
 	color: white;
 }
