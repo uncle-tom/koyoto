@@ -17,26 +17,34 @@
 			        <md-option value="store">Интернет-магазин</md-option>
 			      </md-select>
 			    </md-input-container>
-					<div>
-						<span ng-if="project === 'vizitka'">от <span class="price-number" >3 000</span> грн.</span>
+			    <div>
+			    	<span ng-if="project === 'vizitka'">от <span class="price-number" >3 000</span> грн.</span>
 						<span ng-if="project === 'landing'">от <span class="price-number" >3 500</span> грн.</span>
 						<span ng-if="project === 'promo'">от <span class="price-number" >4 500</span> грн.</span>
 						<span ng-if="project === 'corp'">от <span class="price-number" >6 000</span> грн.</span>
 						<span ng-if="project === 'store'">от <span class="price-number" >8 000</span> грн.</span>
-					</div>
+			    </div>
+					
 					<div>
 						<h3>Вы получаете:</h3>
-						<p ng-if="project === 'vizitka'"><i class="fa fa-check" aria-hidden="true"></i> Готовый сайт на 10 страниц за 7 дней</p>
-						<p ng-if="project === 'promo' || project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Готовый сайт за 10 рабочих дней</p>
-						<p ng-if="project === 'vizitka' || project === 'promo' || project === 'landing' || project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Уникальный дизайн</p>
-						<p ng-if="project === 'vizitka' || project === 'promo' || project === 'landing' || project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Адаптивную верстку</p>
-						<p ng-if="project === 'vizitka' || project === 'promo' || project === 'landing' || project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Гарантируемую техническую поддержку</p>
-						<p ng-if="project === 'promo' || project === 'landing' || project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Бесплатный хостинг на три месяца</p>
-						<p ng-if="project === 'promo' || project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Форму для приема заказов</p>
-						<p ng-if="project === 'store' || project === 'corp'"><i class="fa fa-check" aria-hidden="true"></i> Готовый блог внутри сайта</p>
-						<p ng-if="project === 'store' || project === 'corp'"><i class="fa fa-check" aria-hidden="true"></i> Удобную админку</p>
+						<p ng-hide="project === vizitka"><i class="fa fa-check" aria-hidden="true"></i> Слайдер</p>
+						<p><i class="fa fa-check" aria-hidden="true"></i> Фотогалерея</p>
+						<p ng-if="project === 'promo' || project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Интеграция с социальными сетями</p>
+						<p><i class="fa fa-check" aria-hidden="true"></i> Помощь в регистрации домена</p>
+						<p ng-hide="project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Систему управления контентом (CMS)</p>
+						<p><i class="fa fa-check" aria-hidden="true"></i> Кроссбраузерность сайта</p>
+						<p ng-hide="project === 'vizitka'"><i class="fa fa-check" aria-hidden="true"></i> Уникальный дизайн</p>
+						<p><i class="fa fa-check" aria-hidden="true"></i> Адаптивную верстку</p>
+						<p ng-hide="project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Неограниченное количество страниц</p>
+						<p ng-if="project === 'store' || project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Мультиязычный сайт</p>
+						<p><i class="fa fa-check" aria-hidden="true"></i> Установка Яндекс.Метрики и Google Analytics</p>
+						<p ng-if="project === 'corp'"><i class="fa fa-check" aria-hidden="true"></i> Создание корпоративной почты</p>
+						<p ng-if="project === 'vizitka' || project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Гарантируемую техническую поддержку</p>
+						<p ng-if="project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Бесплатный хостинг на три месяца</p>
+						<p ng-if="project === 'promo' || project === 'landing' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Форму для приема заказов</p>
+						<p ng-if="project === 'store' || project === 'corp' || project === 'vizitka'"><i class="fa fa-check" aria-hidden="true"></i> Готовый блог внутри сайта</p>
 						<p ng-if="project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Email рассылку прямо из админки</p>
-						<p ng-if="project === 'promo' || project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Базовую SEO-оптимизацию</p>
+						<p ng-if="project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Базовую SEO-оптимизацию</p>
 					</div>
 				</div>
 			</div>
