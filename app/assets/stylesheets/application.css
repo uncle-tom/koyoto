@@ -411,6 +411,10 @@ header:hover {
 	display: block !important;
 }
 
+#clothesdrop:hover #clothesheader {
+	padding-left: 300px;
+}
+
 #clothesheaderopen, #accheaderopen {
   display: none;
   background: #333;
@@ -1094,7 +1098,7 @@ md-checkbox.md-checked .md-icon {
 ****************/
 
 #clothesheader {
-	padding-left: 200px;
+	/*padding-left: 200px;*/
 }
 
 #clothesheaderopen {
