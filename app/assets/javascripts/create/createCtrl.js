@@ -71,8 +71,9 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
 	    description: 'Разработанный нами интернет-магазин позволит сразу вам же начать продавать в интернете. Отлаженная система работы помогает нам создавать идеальные интернет-магазины - практически восьмое чудо света. Не стоит лишний раз говорить, какие перспективы у онлайн-продаж, вы и сами слышали про эти невероятные цифры. Убедитесь на собственном опыте, создайте интернет-магазин! '
   	},
   ];
+	
+	$scope.selected = $scope.sections[$stateParams.sectionId] || $scope.sections[0];
 
-  $scope.selected = $scope.sections[0];
   $scope.setMaster = function(section) {
     $scope.selected = section;
   }
@@ -80,4 +81,6 @@ function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth,
   $scope.isSelected = function(section) {
     return $scope.selected === section;
   }
+
+  
 }

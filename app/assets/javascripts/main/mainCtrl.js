@@ -98,5 +98,8 @@ function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, n
     $scope.zagotovka3 = 'assets/mobile/zagotovka3.png';  
   }
   
+  // $scope.func2 = function(){
+  //   $scope.newOrder.vizitka = true;  
+  // }
   
 }

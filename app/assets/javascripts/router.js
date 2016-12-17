@@ -52,7 +52,8 @@ angular
       .state('create', {
         url: '/create', 
         controller: 'createCtrl',
-        templateUrl: 'create/index.html'
+        templateUrl: 'create/index.html',
+        params : { sectionId: null, }
       })
       .state('seo', {
         url: '/seo', 

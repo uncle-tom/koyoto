@@ -18,7 +18,7 @@
 			<div class="row">
 				<div class="brand pull-left">
 					<div class="logo">
-						<img src="assets/logo.png" alt="">
+						<a href="/"><img src="assets/logo.png" alt=""></a>
 					</div>
 					<li><a href="/"> KOYOTO Studio</a></li>
 				</div>
@@ -94,14 +94,14 @@
 								<div class="container">
 									<div class="row" style="margin:auto">
 										<div class="col-md-12">
-											<a href="/create"><div class="col-md-4 uslugi-create">
+											<div class="col-md-4 uslugi-create">
 												<h3>Создание сайтов</h3>
-												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Сайт-визитка</p>
-												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Промо сайт</p>
-												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Landing Page</p>
-												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Корпоративный сайт</p>
-												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Интернет-магазин</p>
-											</div></a>
+												<p><a ui-sref="create({sectionId:0})"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Сайт-визитка</a></p>
+												<p><a ui-sref="create({sectionId:1})"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Промо сайт</a></p>
+												<p><a ui-sref="create({sectionId:2})"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Landing Page</a></p>
+												<p><a ui-sref="create({sectionId:3})"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Корпоративный сайт</a></p>
+												<p><a ui-sref="create({sectionId:4})"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Интернет-магазин</a></p>
+											</div>
 											<a href="/seo"><div class="col-md-4 uslugi-seo">
 												<h3>SEO-Продвижение</h3>
 												<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> SEO-Аудит</p>
@@ -167,6 +167,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div>
+								<h4></h4>
 								<md-input-container class="md-block">
 			            <label>Ваше имя</label>
 			            <input ng-model="newOrder.name">
@@ -186,7 +187,7 @@
 						<div class="col-md-4">
 							<div>
 								<p>Создание сайтов:</p>
-								<md-checkbox ng-model="newOrder.vizitka" aria-label="Checkbox 1">
+								<md-checkbox ng-model="newOrder.vizitka" md-checked="vizitka_checked" aria-label="Checkbox 1">
 			          	Сайт- визитка
 			          </md-checkbox>
 			          <md-checkbox ng-model="newOrder.promo" aria-label="Checkbox 1">

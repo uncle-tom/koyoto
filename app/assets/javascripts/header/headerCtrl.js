@@ -25,4 +25,11 @@ function headerCtrl($scope, $http, $localStorage, $sessionStorage, Auth, $stateP
       }
     );
   };
+  
+  // $scope.newOrder.vizitka = true;
+  $scope.myfunc2 = function(){
+    $scope.vizitka_checked = true;
+    console.log($scope.vizitka_checked)
+  }
+  // $scope.newOrder.vizitka = $stateParams.bool || null;
 }

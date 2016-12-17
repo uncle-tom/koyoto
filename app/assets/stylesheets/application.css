@@ -367,7 +367,7 @@ header {
 	-webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.3);
   box-shadow: 0 1px 8px rgba(0,0,0,0.3);
   background-color: #333;  
-  z-index: 1;
+  z-index: 999;
 	/*background-image: -webkit-linear-gradient(bottom left, rgba(248,187,208,0.72), rgba(0, 224, 255, 0.33));*/
 	transition: top 0.2s ease-in-out;
 	font-family: 'PT Sans Caption', sans-serif;
@@ -597,14 +597,15 @@ header:hover {
 	width: 100%;
 }
 
-.example-site {
+.example-site a{
 	padding: 5px 1px;
 	color: #888;
 	cursor: pointer;
 }
 
-.example-site:hover {
+.example-site a:hover {
 	border-bottom: 2px dotted #888;
+	text-decoration: none;
 }
 
 .example-window {

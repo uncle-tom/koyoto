@@ -45,10 +45,10 @@
 	<div class="container portfolio">
 		<div ng-repeat="p in portfolio">
 			<div class="col-md-6 col-xs-12" style="margin-bottom:50px;">
-				<img class="{{p.myclass}}" ng-src="{{p.photo}}" alt="">
+				<a href="{{p.href}}" target="_blank"><img class="{{p.myclass}}" ng-src="{{p.photo}}" alt=""></a>
 				<p class="type">{{p.type}}</p>
 				<p class="name">{{p.name}}</p>
-				<p>Посетить сайт <i class="fa fa-location-arrow" aria-hidden="true"></i></p>
+				<p><a href="{{p.href}}" target="_blank">Посетить сайт <i class="fa fa-location-arrow" aria-hidden="true"></i></a></p>
 			</div>
 		</div>
 	</div>
