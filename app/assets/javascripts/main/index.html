@@ -10,6 +10,108 @@
 	</div>
 </div>
 
+<div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+					<div class="row">
+						<div class="col-md-6">
+							<div>
+								<h4></h4>
+								<md-input-container class="md-block">
+			            <label>Ваше имя</label>
+			            <input ng-model="newOrder.name">
+			          </md-input-container>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div>
+								<md-input-container class="md-block">
+			            <label>Email или телефон для связи</label>
+			            <input ng-model="newOrder.contact">
+			          </md-input-container>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div>
+								<p>Создание сайтов:</p>
+								<md-checkbox ng-model="newOrder.vizitka" md-value="newOrder.vizitka" md-checked="newOrder.vizitka" aria-label="Checkbox 1">
+			          	Сайт- визитка
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.promo" aria-label="Checkbox 1">
+			          	Промо-сайт
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.landing" aria-label="Checkbox 1">
+			          	Langing Page
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.corp" aria-label="Checkbox 1">
+			          	Корпоративный
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.store" aria-label="Checkbox 1">
+			          	Интернет-магазин
+			          </md-checkbox>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div>
+								<p>SEO:</p>
+								<md-checkbox ng-model="newOrder.audit" aria-label="Checkbox 1">
+			          	SEO-Аудит
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.inner" aria-label="Checkbox 1">
+			          	Внутренняя оптимизация
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.seocomplex" aria-label="Checkbox 1">
+			          	Комплексное продвижение
+			          </md-checkbox>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div>
+								<p>SMM:</p>
+								<md-checkbox ng-model="newOrder.facebook" aria-label="Checkbox 1">
+			          	Facebook
+			          </md-checkbox>
+			          <br>
+			          <md-checkbox ng-model="newOrder.vk" aria-label="Checkbox 1">
+			          	VK
+			          </md-checkbox>
+			          <br>
+			          <md-checkbox ng-model="newOrder.instagram" aria-label="Checkbox 1">
+			          	Instagram
+			          </md-checkbox>
+			          <md-checkbox ng-model="newOrder.smmcomplex" aria-label="Checkbox 1">
+			          	Комплексное продвижение
+			          </md-checkbox>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div>
+								<md-input-container class="md-block">
+			            <label>Промо-код</label>
+			            <input ng-model="newOrder.promocode">
+			          </md-input-container>
+								<md-input-container class="md-block">
+				          <label>Ваше сообщение</label>
+				          <textarea ng-model="newOrder.message" rows="5" md-select-on-focus></textarea>
+				        </md-input-container>
+							</div>
+						</div>
+					</div>
+	      </div>
+	      <div class="modal-footer">
+	      	<md-button class="md-raised" data-dismiss="modal">Закрыть</md-button>
+	        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button> -->
+	        <md-button type="submit" ng-click="send_order()" class="md-raised md-primary">Отправить</md-button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 <div class="margin50"></div>
 <div class="container">
 	<div class="row">
@@ -96,7 +198,7 @@
 					<div class="col-md-2 col-xs-12"></div>
 					<div class="col-md-4 col-xs-12">
 						<p class="vizitka-smalltext">Основная задача - привлечь внимание и предоставить необходимую информацию вашему потенциальному клиенту. Обычно такой сайт состоит из нескольких страниц, на которых и содержится вся информация о вашей компании. После ознакомление с сайтом, посетитель превращается в вашего постоянного клиента.
-							<br><br><a href="#" ng-controller="headerCtrl" data-toggle="modal" data-target="#order" data-ng-click="newOrder.vizitka === true">Заказать сайт-визитку <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+							<br><br><a href="#" data-toggle="modal" data-target="#order" ng-click="newOrder.vizitka = true">Заказать сайт-визитку <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 						</p>
 					</div>
 				</div>
@@ -138,7 +240,7 @@
 					<div class="col-md-2 col-xs-12"></div>
 					<div class="col-md-4 col-xs-12">
 						<p class="promo-smalltext">У вас есть классный продукт и вам хочется заявить о нем? Идеальный вариант - сделать промо-сайт. Покажите все положительные стороны вашего продукта или услуги. Опишите преимущества и собирайте урожай из заказов. Промо-сайт великолепно генерирует новых клиентов.
-							<br><br><a href="#">Заказать промо-сайт <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+							<br><br><a href="#" data-toggle="modal" data-target="#order" ng-click="newOrder.promo = true">Заказать промо-сайт <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
 						</p>
 					</div>
 				</div>
