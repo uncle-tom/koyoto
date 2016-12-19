@@ -30,6 +30,7 @@
 //= require_tree ./seo
 //= require_tree ./smm
 //= require_tree ./order
+//= require_tree ./directives
 //= require_tree ./footer
 //= require_tree ./header
 //= require_tree ./main
