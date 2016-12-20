@@ -213,6 +213,28 @@
 	/*********
 	 smmpage
 	*********/
+	#smmpage .leftblock .block {
+		box-shadow: none !important;
+		background: none !important;
+		border-radius: 0px !important;
+		z-index: 0 !important;
+	}
+	#smmpage .rightblock .block {
+		width: 90% !important;
+		margin-top: 50px !important;
+		margin-bottom: 50px !important;
+		display: block;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+	}
+	#smmpage .mainblock {
+		height: auto !important;
+	}
+
+	#smmpage .welcome-text_button {
+		font-size: 13px !important;
+	}
 	#smm .title {
 		font-size: 32px !important;
 	}
@@ -220,6 +242,8 @@
 	#smm .description {
 		font-size: 18px;
 	}
+
+
 
 	#mainsmm {
 		background: url('mobile/smm.jpg') !important;
@@ -376,7 +400,7 @@ header {
 	-webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.3);
   box-shadow: 0 1px 8px rgba(0,0,0,0.3);
   background-color: #333;  
-  z-index: 999;
+  z-index: 99999;
 	/*background-image: -webkit-linear-gradient(bottom left, rgba(248,187,208,0.72), rgba(0, 224, 255, 0.33));*/
 	transition: top 0.2s ease-in-out;
 	font-family: 'PT Sans Caption', sans-serif;
@@ -974,7 +998,7 @@ ORDER
 	height: 55px;
 	margin-top: 0px;
 	background-color: #fff;
-	z-index: 9999;
+	z-index: 99;
 	position: relative;
 	color: #767676;
 	font-size: 16px;
@@ -1323,6 +1347,129 @@ md-checkbox.md-checked .md-icon {
 /****************
 	SMM
 ****************/
+#smmpage {
+	/*background-image: linear-gradient(160deg, #02CCBA 0%, #AA7ECD 100%);*/
+}
+#smmpage .mainblock {
+	height: 500px;
+}
+#smmpage .leftblock, #smmpage .rightblock {
+	height: 472px;
+}
+
+#smmpage .leftblock .block { height: 100%;}
+#smmpage .leftblock .block {
+	width: 100%;
+	z-index: 12222;
+	position: relative;
+	overflow: hidden;	
+	color: #fff;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+}
+
+#smmpage .leftblock .block p {
+	position: relative;
+	font-size: 24px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+   transform: translateY(-50%); 
+}
+
+#smmpage .rightblock .block {
+	width: 100%;
+	height: 144px;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+#smmpage .rightblock .block p {
+	padding: 20px 0px 0px 0px
+}
+
+#smmpage .rightblock .block:hover {
+	box-shadow: 5px 5px 5px 0px rgba(46,61,73,0.15);
+}
+
+#smmpage .rightblock .block img {
+	border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-left: 1px solid rgba(122, 148, 200, 0.68);
+}
+
+#smmpage #myVideo {
+	width: 109%;
+	height: 100%;
+	position: absolute;
+	display: block;
+}
+
+#smmpage h1 {
+	color: #fff;
+	font-size: 24px;
+}
+
+#smmpage:before {
+	content: '';
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(160deg, #02CCBA 0%, #AA7ECD 100%);
+  transform-origin: left bottom;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: skew(0deg, -15deg);
+  -moz-transform: skew(0deg, -15deg);
+  -ms-transform: skew(0deg, -15deg);
+  -o-transform: skew(0deg, -15deg);
+  transform: skew(0deg, -15deg);
+}
+
+.smmpage {
+	padding: 50px 0px 0px 0px;
+}
+
+#smmpage .why {
+	display: flex;
+}
+
+#smmpage .why .title {
+	font-family: 'Nova';
+	font-size: 28px;
+}
+
+#smmpage .why .flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#smmpage .why img {
+	width: 100%;
+}
+
+#smmpage #smmorder {
+	background-image: -webkit-linear-gradient(top left, #02b3e4, #02ccba);
+	background-image: -o-linear-gradient(top left, #02b3e4, #02ccba);
+	background-image: linear-gradient(to bottom right, #02b3e4, #02ccba);
+}
+
+#smmpage #smmorder .inner {
+	text-align: center;
+  padding: 50px;
+  margin: 50px 0px;
+  background-color: #fff;
+  box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+}
 
 #smm {
   margin:0;
@@ -1341,7 +1488,11 @@ md-checkbox.md-checked .md-icon {
   height: 280px;
 }
 
-#smm1, #smm2, #smm3, #smm4, #smm5, #smm6 {
+#smm7 {
+	background-image: linear-gradient(to bottom right, #02b3e4, #02ccba);
+}
+
+#smm1, #smm2, #smm3, #smm4, #smm5, #smm6, #smm7 {
 	display: flex;
 	align-items: center;
   height:100vh;

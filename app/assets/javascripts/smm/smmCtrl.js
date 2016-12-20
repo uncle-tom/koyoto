@@ -75,9 +75,13 @@ function smmCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth, $s
     return $scope.selected === section;
   }
   
-  $.scrollify({
-    section:".example-classname",
-    scrollSpeed: 700,
-  });
+  // $.scrollify({
+  //   section:".example-classname",
+  //   scrollSpeed: 700,
+  // });
+  $scope.slider = [
+    {name : 'Жопа'},
+    {name : 'Полная Жопа'},
+  ]
 
 }

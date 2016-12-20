@@ -1,6 +1,151 @@
 <title>SMM</title>
 <meta name="description" content="" />
-<div class="arrow-down">
+<orderform></orderform>
+<section id="smmpage">
+	<div class="container smmpage">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="pull-left">
+					Раскрутка в социальных сетях
+					<hr class="pc-show">
+				</h1>	
+				<h1 class="pull-right pc-show">
+					(099) 53-49-897
+					<hr>
+				</h1>
+			</div>
+		</div>
+		<div class="row mainblock">
+			<div class="col-md-8">
+				<div class="leftblock">
+					<div class="block">
+						<video id="myVideo" class="pc-show" autoplay loop poster="assets/icon/poster.png">
+							<source src="http://s.storage.akamai.coub.com/get/b116/p/coub/simple/cw_file/7eee55c2f37/ce7f060bd9c34b0fa3755/mp4_med_size_1481752790_med.mp4" type="video/mp4">
+						</video>
+
+						<p class="text-center">Это ваша возможность!<br>Получите стабильный источник новых клиентов
+						<br><br>
+						<a href="#" data-toggle="modal" data-target="#order "  style="outline:none"><md-button class="welcome-text_button" style="color: rgb(255, 255, 255); background: rgb(76, 175, 80);">Отправить заявку</md-button></a></p>
+						<div></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="rightblock">
+					<div class="block">
+						<div class="col-md-5 col-xs-6" style="    margin-left: -15px;">
+							<div>
+								<img src="https://s3-us-west-1.amazonaws.com/udacity-content/modules/module-hiring-partners%401x.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-7 col-xs-6">
+							<p style="color:#15c26b">Facebook</p>
+							<div>Lorem ipsum dolor sit amet.</div>
+						</div>
+					</div>
+					<div class="block">
+						<div class="col-md-5 col-xs-6" style="    margin-left: -15px;">
+							<div>
+								<img src="https://s3-us-west-1.amazonaws.com/udacity-content/modules/module-hiring-partners%401x.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-7 col-xs-6">
+							<p style="color:#02ccba">Instagram</p>
+							<div>Lorem ipsum dolor sit amet.</div>
+						</div>
+					</div>
+					<div class="block">
+						<div class="col-md-5 col-xs-6" style="    margin-left: -15px;">
+							<div>
+								<img src="https://s3-us-west-1.amazonaws.com/udacity-content/modules/module-hiring-partners%401x.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-7 col-xs-6">
+							<p style="color:#02b3e4">Vk</p>
+							<div>Lorem ipsum dolor sit amet.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center" ng-controller="mainCtrl">
+		<div class="client" ng-repeat="i in client">
+			<li><img ng-src="{{i.img}}" alt=""></li>
+		</div>
+	</div>
+	<div class="margin50"></div>
+	<div class="container">
+		<ks-swiper-container initial-slide="1" data-swiper-autoplay="2000" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="2" pagination-clickable="false">
+	    <ks-swiper-slide class="swiper-slide" ng-repeat="s in slider">
+	        <p class="block-center" style="text-align:center">{{s.name}}</p>
+	    </ks-swiper-slide>
+		</ks-swiper-container>
+	</div>
+	<div class="margin50"></div>
+	<div class="container why">
+		<div class="col-md-6 flex">
+			<p class="title">Заявить о себе в социальных сетях - легко!</p>
+			<p class="description">Грамотная работа позволит увеличить количество заказов в несколько раз. Попробуйте!</p>
+		</div>
+		<div class="col-md-6 pc-show">
+			<img src="https://d13yacurqjgara.cloudfront.net/users/99875/screenshots/1433198/mark-and-john.gif" alt="">
+		</div>
+	</div>
+	<div class="container why">
+		<div class="col-md-6 pc-show">
+			<img src="https://d13yacurqjgara.cloudfront.net/users/285475/screenshots/2083086/dribbble_1.gif" alt="">
+		</div>
+		<div class="col-md-6 flex">
+			<p class="title">Все сложное и непонятное становится легким и доступным</p>
+			<p class="description">Если вам кажется, что разобраться со всеми хитростями социальных сетей способен лишь бородатый умник, то вы ошибаетесь. Мы сможем доступным языком объяснить основные метрики и как отслеживать пути достижения цели. Ничего сложного.</p>
+		</div>
+	</div>
+	<div class="container why">
+		<div class="col-md-6 flex">
+			<p class="title">Разработка уникальной контент-стратегии</p>
+			<p class="description">Публикуйте для подписчиков качественный и интересный контент - и они будут с вами навсегда. Создаем для вас контент-стратегию основанную на анализе статистики. Контент-стратегия это ваша дорожная карта к успеху.</p>
+		</div>
+		<div class="col-md-6 pc-show">
+			<img src="https://d13yacurqjgara.cloudfront.net/users/99875/screenshots/1458439/pharrell_drib.gif" alt="">
+		</div>
+	</div>
+	<div class="container why">
+		<div class="col-md-6 pc-show">
+			<img src="https://d13yacurqjgara.cloudfront.net/users/99875/screenshots/1421536/cupido.gif" alt="">
+		</div>
+		<div class="col-md-6 flex">
+			<p class="title">Таргетинговая реклама - точное попадание в цель</p>
+			<p class="description">Наши стрелы всегда попадают в самое сердце подписчиков. Мы принимает эффективные и нестандартные решения. Не навязчивая, а точечная реклама - вот залог успеха.</p>
+		</div>
+	</div>
+	<div class="container why">
+		<div class="col-md-6 flex">
+			<p class="title">Планировать - значит быть готовым ко всему!</p>
+			<p class="description">Грамотная работа позволит увеличить количество заказов в несколько раз. Попробуйте!</p>
+		</div>
+		<div class="col-md-6 pc-show">
+			<img src="https://d13yacurqjgara.cloudfront.net/users/43762/screenshots/1559273/itsnottoolate.gif" alt="">
+		</div>
+	</div>
+	<section id="smmorder">
+		<div class="container">
+			<div class="col-md-8 block-center">
+				<div class="inner">
+					<div>
+						Не стоит тянуть, начните продвижение прямо сейчас.
+						<a href="#" data-toggle="modal" data-target="#order "  style="outline:none"><md-button class="welcome-text_button" style="color: rgb(255, 255, 255); background: rgb(76, 175, 80); margin-left: 0px;">Отправить заявку</md-button></a>
+					</div>
+				</div>	
+			</div>
+			
+		</div>
+	</section>
+</section>
+
+
+<!-- <div class="arrow-down">
 	<i class="material-icons">keyboard_arrow_down</i>
 </div>
 <div id="smm" >
@@ -102,7 +247,24 @@
 			</div>
 		</div>
 	</section>
-</div>
+	<section id="smm7" class="example-classname">
+		<div class="container-fluid">
+			<div class="row mycenter" style="display:flex; align-items:center;">
+				<div class="col-md-12">
+					<div class="col-md-2">
+						Значек
+					</div>
+					<div class="col-md-6">
+						Текст
+					</div>
+					<div class="col-md-4">
+						Кнопка
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div> -->
 
 
 <!-- <section id="smmpage">
