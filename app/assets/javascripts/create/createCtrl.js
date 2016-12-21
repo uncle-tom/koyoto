@@ -1,10 +1,21 @@
 angular.module('MyStore').controller('createCtrl', 
   ['$scope', '$state', '$http', '$localStorage', 
-  '$sessionStorage', 'Auth', '$stateParams',
+  '$sessionStorage', 'Auth', '$stateParams', 'Order',
   createCtrl]);
 
-function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth, $stateParams) {	
+function createCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth, $stateParams, Order) {	
   console.log('createCtrl')
+
+  $scope.new_order = new Order({order_id: $stateParams.id});
+
+  $scope.send_order = function() {
+    Order.save({ order_id: $stateParams.id, order: $scope.newOrder,  }, 
+      function(response) {
+        console.log('resp from BE', response);
+      }
+    );
+  };
+
 	$scope.sections = [
     {
     	name: 'Сайт-визитка',
