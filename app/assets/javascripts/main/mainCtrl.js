@@ -1,8 +1,7 @@
 angular.module('MyStore').controller('mainCtrl', 
-  ['$scope', '$http', '$stateParams', '$localStorage', '$sessionStorage', 'Order',
-   'Product', 'InvoiceItem', 'Address', mainCtrl]);
+  ['$scope', '$http', '$stateParams', '$localStorage', '$sessionStorage', 'Order', mainCtrl]);
 
-function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, ngCart, Order, Product, InvoiceItem, Address) {
+function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, Order) {
 
   $scope.slider = [
     {image : '/assets/slider/corp-slider1.jpg'},
@@ -27,44 +26,15 @@ function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, n
     return products.has_popular === true;
   }
 
-  $scope.new_order = new Order();
+  $scope.new_order = new Order({order_id: $stateParams.id});
 
-  $scope.updateOrder = function() {
-    if(!$scope.new_order.id) {
-      $scope.new_order.payment_type = $scope.user.payment_type;
-
-      $scope.new_order.$save(function(order) {
-        $scope.new_order.id = order.id;
-        
-        $.map(ngCart.getCart().items, function(el) {
-              
-          var invoice_item = new InvoiceItem({
-            product_id: el._id, 
-            price: el._price, 
-            count: el._quantity,
-            order_id: order.id,
-            color: el.getData().color,
-            size: el.getData().size
-          });
-
-          invoice_item.$save();
-
-          var address = new Address({
-            order_id: order.id,
-            user_name: $scope.user.name,
-            user_phone: $scope.user.phone,
-            user_email: $scope.user.email,
-            town: $scope.user.city,
-            address: $scope.user.address, 
-            notes: $scope.user.notes
-          });
-
-          address.$save();
-          ngCart.empty()
-        });
-      })
-    }
-  }
+  $scope.send_order = function() {
+    Order.save({ order_id: $stateParams.id, order: $scope.newOrder,  }, 
+      function(response) {
+        console.log('resp from BE', response);
+      }
+    );
+  };
 
   $scope.openexample = function(){
     $('.example-window').fadeIn();
