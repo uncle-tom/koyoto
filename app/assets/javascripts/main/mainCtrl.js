@@ -1,7 +1,7 @@
 angular.module('MyStore').controller('mainCtrl', 
-  ['$scope', '$http', '$stateParams', '$localStorage', '$sessionStorage', 'Order', mainCtrl]);
+  ['$scope', '$state', '$http', '$stateParams', '$localStorage', '$sessionStorage', 'Order', mainCtrl]);
 
-function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, Order) {
+function mainCtrl($scope, $state, $http, $stateParams, $localStorage, $sessionStorage, Order) {
 
   $scope.slider = [
     {image : '/assets/slider/corp-slider1.jpg'},
@@ -32,6 +32,7 @@ function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, O
     Order.save({ order_id: $stateParams.id, order: $scope.newOrder,  }, 
       function(response) {
         console.log('resp from BE', response);
+        $state.go('thank')
       }
     );
   };

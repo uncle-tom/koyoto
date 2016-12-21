@@ -49,6 +49,11 @@ angular
         controller: 'mainCtrl',
         templateUrl: 'main/contact.html'
       })
+      .state('thank', {
+        url: '/thank', 
+        controller: 'mainCtrl',
+        templateUrl: 'main/thank.html'
+      })
       .state('create', {
         url: '/create', 
         controller: 'createCtrl',

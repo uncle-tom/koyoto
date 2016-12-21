@@ -12,6 +12,7 @@ function smmCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth, $s
     Order.save({ order_id: $stateParams.id, order: $scope.newOrder,  }, 
       function(response) {
         console.log('resp from BE', response);
+        $state.go('thank')
       }
     );
   };

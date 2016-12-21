@@ -1358,6 +1358,23 @@ md-checkbox.md-checked .md-icon {
 }
 
 /****************
+	Thank You
+****************/
+
+.thankpage_text {
+	padding: 150px;
+	
+}
+
+.thankpage_text h1 {
+	font-family: 'PT Sans Caption', sans-serif;
+}
+
+.thankpage_text h4 {
+	line-height: 1.7;
+	font-size: 24px;
+}
+/****************
 	SMM
 ****************/
 #smmpage {
@@ -1828,31 +1845,9 @@ md-checkbox.md-checked .md-icon {
 
 li.active { color:orange;  }
 
-/****************
-	About's Page
-****************/
-.about h2, .about .swiper-slide {
-	text-align: center;
-}
 
-.about p {
-	text-align: justify;
-}
+/
 
-.about .swiper-slide img {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-}
-
-/****************
-	Paydelivery
-****************/
-
-.paydelivery-page_main {
-	color: #000 !important;
-	padding-top: 20px;
-}
 
 /****************
 	Contact
