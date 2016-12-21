@@ -896,6 +896,11 @@ COUNTER
 .count h3 {
 }
 
+.count hr {
+	border-top: 7px solid rgba(140, 158, 255, 0.75);
+  width: 50px;
+}
+
 .counter {
   animation-duration: 1s;
   animation-delay: 0s;
@@ -1465,13 +1470,13 @@ md-checkbox.md-checked .md-icon {
 	width: 100%;
 }
 
-#smmpage #smmorder {
+#smmpage #smmorder, #seopage #seoorder {
 	background-image: -webkit-linear-gradient(top left, #02b3e4, #02ccba);
 	background-image: -o-linear-gradient(top left, #02b3e4, #02ccba);
 	background-image: linear-gradient(to bottom right, #02b3e4, #02ccba);
 }
 
-#smmpage #smmorder .inner {
+#smmpage #smmorder .inner, #seopage #seoorder .inner {
 	text-align: center;
   padding: 50px;
   margin: 50px 0px;

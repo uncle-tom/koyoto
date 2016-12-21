@@ -98,24 +98,31 @@
 			    </div>
 			    <div>
 						<h3>Вы получаете:</h3>
-						<p ng-if="seo === 'seoaudit' || seo === 'complex' ||"><i class="fa fa-user" aria-hidden="true"></i> Ответы на дополнительные ваши вопросы</p>
-						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Анализ конкурентов и рыночной среды</p>
+						<div ng-if="seo === seoaudit">
+							
+						</div>
+						<div ng-if="seo === 'optimization'">
+							
+						</div>
+						<div ng-if="seo ==='complex'">
+							<p><i class="fa fa-check" aria-hidden="true"></i> Анализ конкурентов и рыночной среды</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> Семантическое ядро</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> Оптимизированные мета-теги: title и description</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> Составленное ТЗ для копирайтера</p>
+							<p><a href="#" data-toggle="modal" data-target="#price-seo">Что еще?</a></p>
+						</div>
+						
+						
 						<p ng-if="seo === 'optimization'"><i class="fa fa-check" aria-hidden="true"></i> Оптимизацию контента. Правильное размещение тегов H1, H2</p>
-						<p ng-if="seo === 'optimization' || seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Семантическое ядро</p>
-						<p ng-if="seo === 'optimization' || seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Оптимизированные мета-теги: title и description</p>
-						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Составленное ТЗ для копирайтера</p>
-						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Удаление дублированного контента</p>
-						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Готовую карту сайта</p>
-						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Настроенный и оптимизированный robots.txt</p>
-						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Добавление сайта в Яндекс.Вебмастер и Google.Webmasters</p>
-						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Установку Яндекс.Метрики и Google Analytics</p>
-						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Улучшенную структуру сайта</p>
-						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Индивидуального менеджера</p>
-						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Еженедельный отчет о проделанной работе</p>
+						<p ng-if="seo === 'optimization'"><i class="fa fa-check" aria-hidden="true"></i> Семантическое ядро</p>
+						<p ng-if="seo === 'optimization'"><i class="fa fa-check" aria-hidden="true"></i> Оптимизированные мета-теги: title и description</p>
+						
+						
 						<p ng-if="seo === 'seoaudit'"><i class="fa fa-check" aria-hidden="true"></i> Проверку технической оптимизации сайта: ЧПУ, дублированные страницы, код ответа сервера, скорость загрузки, склейка зеркал, наличие фильтров.</p>
 						<p ng-if="seo === 'seoaudit'"><i class="fa fa-check" aria-hidden="true"></i> Анализ вутренней оптимизации: наличие пустых или мусорных страниц, проверка мета-тегов, "тошноты" страниц, распределение внутреннего веса, качество контента.</p>
 						<p ng-if="seo === 'seoaudit'"><i class="fa fa-check" aria-hidden="true"></i> Аудит внешней оптимизации сайта: анализ ссылочной массы, проверка на наличие в каталогах Яндекса и DMOZ, социальные сигналы и как их улучшить.</p>
 						<p ng-if="seo === 'seoaudit'"><i class="fa fa-check" aria-hidden="true"></i> Рекомендации по структуре, оценку внешнего вида сайта. </p>
+						<p ng-if="seo === 'seoaudit'"><i class="fa fa-check" aria-hidden="true"></i> Ответы на дополнительные ваши вопросы</p>
 					</div>
 				</div>
 			</div>
@@ -185,8 +192,33 @@
 	      </div>
 	      <div class="modal-footer">
 	      	<md-button class="md-raised" data-dismiss="modal">Закрыть</md-button>
+	      	<md-button type="submit" data-toggle="modal" data-target="#order " data-dismiss="modal" class="md-raised md-primary">Заказать</md-button>
 	      </div>
 	    </div>
 	  </div>
 	</div>
+	<div class="modal fade" id="price-seo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 999999;">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+					<h2>Заказывая <span ng-if="project === 'vizitka'">сайт-визитку</span> <span ng-if="project === 'landing'">Langing page</span> <span ng-if="project === 'promo'">промо-сайт</span> <span ng-if="project === 'corp'">корпоративный сайт</span> <span ng-if="project === 'store'">интернет-магазин</span> вы получаете:</h2>
+					<div class="two-col">
+						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Удаление дублированного контента</p>
+						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Готовую карту сайта</p>
+						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Настроенный и оптимизированный robots.txt</p>
+						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Добавление сайта в Яндекс.Вебмастер и Google.Webmasters</p>
+						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Установку Яндекс.Метрики и Google Analytics</p>
+						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Улучшенную структуру сайта</p>
+						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Индивидуального менеджера</p>
+						<p ng-if="seo === 'complex'"><i class="fa fa-check" aria-hidden="true"></i> Еженедельный отчет о проделанной работе</p>
+					</div>
+	      </div>
+	      <div class="modal-footer">
+	      	<md-button class="md-raised" data-dismiss="modal">Закрыть</md-button>
+	      	<md-button type="submit" data-toggle="modal" data-target="#order " data-dismiss="modal" class="md-raised md-primary">Заказать</md-button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<orderform></orderform>
 </section>
