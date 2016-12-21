@@ -283,6 +283,14 @@
   margin-left: auto;
 }
 
+.two-col {
+	list-style-position: inside;
+  -moz-column-count: 2; /* Firefox */
+  -webkit-column-count: 2; /* Safari and Chrome */
+  column-count: 2;
+  list-style-type: decimal;
+}
+
 .mobile-show {
 	display: none;
 }

@@ -24,27 +24,47 @@
 						<span ng-if="project === 'corp'">от <span class="price-number" >6 000</span> грн.</span>
 						<span ng-if="project === 'store'">от <span class="price-number" >8 000</span> грн.</span>
 			    </div>
+			    <h3>Время на работу:</h3>
+			    <div>
+			    	<span ng-if="project === 'vizitka'">до <span class="price-number" >10</span> дней.</span>
+						<span ng-if="project === 'landing'">до <span class="price-number" >14</span> дней</span>
+						<span ng-if="project === 'promo'">до <span class="price-number" >20</span> дней</span>
+						<span ng-if="project === 'corp'">до <span class="price-number" >25</span> дней</span>
+						<span ng-if="project === 'store'">до <span class="price-number" >30</span> дней</span>
+			    </div>
 					
 					<div>
 						<h3>Вы получаете:</h3>
-						<p ng-hide="project === vizitka"><i class="fa fa-check" aria-hidden="true"></i> Слайдер</p>
-						<p><i class="fa fa-check" aria-hidden="true"></i> Фотогалерея</p>
-						<p ng-if="project === 'promo' || project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Интеграция с социальными сетями</p>
-						<p><i class="fa fa-check" aria-hidden="true"></i> Помощь в регистрации домена</p>
-						<p ng-hide="project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Систему управления контентом (CMS)</p>
-						<p><i class="fa fa-check" aria-hidden="true"></i> Кроссбраузерность сайта</p>
-						<p ng-hide="project === 'vizitka'"><i class="fa fa-check" aria-hidden="true"></i> Уникальный дизайн</p>
-						<p><i class="fa fa-check" aria-hidden="true"></i> Адаптивную верстку</p>
-						<p ng-hide="project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Неограниченное количество страниц</p>
-						<p ng-if="project === 'store' || project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Мультиязычный сайт</p>
-						<p><i class="fa fa-check" aria-hidden="true"></i> Установка Яндекс.Метрики и Google Analytics</p>
-						<p ng-if="project === 'corp'"><i class="fa fa-check" aria-hidden="true"></i> Создание корпоративной почты</p>
-						<p ng-if="project === 'vizitka' || project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Гарантируемую техническую поддержку</p>
-						<p ng-if="project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Бесплатный хостинг на три месяца</p>
-						<p ng-if="project === 'promo' || project === 'landing' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Форму для приема заказов</p>
-						<p ng-if="project === 'store' || project === 'corp' || project === 'vizitka'"><i class="fa fa-check" aria-hidden="true"></i> Готовый блог внутри сайта</p>
-						<p ng-if="project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Email рассылку прямо из админки</p>
-						<p ng-if="project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Базовую SEO-оптимизацию</p>
+						<div ng-if="project === 'vizitka'" class="choose-vizitka">
+							<p><i class="fa fa-check" aria-hidden="true"></i> Помощь в регистрации домена</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> Кроссбраузерность сайта</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> Готовый блог внутри сайта</p>
+							<p><a href="#" data-toggle="modal" data-target="#price-create">Что еще?</a></p>
+						</div>
+						<div ng-if="project === 'landing'" class="choose-landing">
+							<p><i class="fa fa-check" aria-hidden="true"></i> Уникальный дизайн</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> Форму для приема заказов</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> Установка Яндекс.Метрики и Google Analytics</p>
+							<p><a href="#" data-toggle="modal" data-target="#price-create">Что еще?</a></p>
+						</div>
+						<div ng-if="project === 'promo'" class="choose-promo">
+							<p><i class="fa fa-check" aria-hidden="true"></i> Слайдер</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> Интеграция с социальными сетями</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> Адаптивную верстку</p>
+							<p><a href="#" data-toggle="modal" data-target="#price-create">Что еще?</a></p>
+						</div>
+						<div ng-if="project === 'corp'" class="choose-corp">
+							<p><i class="fa fa-check" aria-hidden="true"></i> Фотогалерея</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> Систему управления контентом (CMS)</p>
+							<p ng-hide="project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Неограниченное количество страниц</p>
+							<p><a href="#" data-toggle="modal" data-target="#price-create">Что еще?</a></p>
+						</div>
+						<div ng-if="project === 'store'" class="choose-store">
+							<p><i class="fa fa-check" aria-hidden="true"></i> Бесплатный хостинг на три месяца</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> Email рассылку прямо из админки</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> Базовую SEO-оптимизацию</p>
+							<p><a href="#" data-toggle="modal" data-target="#price-create">Что еще?</a></p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -62,7 +82,7 @@
 			<div class="price-desc">
 				<div class="price-desc_inner">
 					<h2>SEO-продвижение</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus alias pariatur harum, aut itaque quam nesciunt suscipit quaerat, officia maxime voluptatum tenetur ullam tempore voluptatem, fuga est asperiores ea debitis.</p>
+					<p>Качественное продвижение вашего сайта в поисковых системах гарантируем стабильный и релевантный трафик, который легко конвертируется в заказы. Имеем огромный опыт в успешном продвижении сайтов в ТОП-10.</p>
 					<h3>Выберите, что вас интересует:</h3>
 					<md-input-container flex="100">
 			      <md-select name="type" ng-model="seo">
@@ -107,7 +127,7 @@
 			<div class="price-desc">
 				<div class="price-desc_inner">
 					<h2>Продвижение в социальных сетях - SMM</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae velit praesentium possimus voluptate nemo omnis, dicta exercitationem esse sapiente minima iusto libero at ullam, ipsa delectus fuga! Est, ipsa, ducimus.</p>
+					<p>Новый тренд, набирающий популярность с космической скоростью. Бизнес, который стремится к развитию? не должен упускать возможность представить свой товар или услугу в социальных сетях. </p>
 					<h3>Выберите, что вас интересует:</h3>
 					<md-input-container flex="100">
 			      <md-select name="type" ng-model="smm">
@@ -135,5 +155,38 @@
 		<div class="price-right col-md-6">
 			<img src="assets/price3.jpg" alt="">
 		</div>
+	</div>
+
+	<div class="modal fade" id="price-create" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 999999;">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+					<h2>Заказывая <span ng-if="project === 'vizitka'">сайт-визитку</span> <span ng-if="project === 'landing'">Langing page</span> <span ng-if="project === 'promo'">промо-сайт</span> <span ng-if="project === 'corp'">корпоративный сайт</span> <span ng-if="project === 'store'">интернет-магазин</span> вы получаете:</h2>
+					<div class="two-col">
+						<p ng-hide="project === vizitka"><i class="fa fa-check" aria-hidden="true"></i> Слайдер</p>
+						<p><i class="fa fa-check" aria-hidden="true"></i> Фотогалерея</p>
+						<p ng-if="project === 'promo' || project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Интеграция с социальными сетями</p>
+						<p><i class="fa fa-check" aria-hidden="true"></i> Помощь в регистрации домена</p>
+						<p ng-hide="project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Систему управления контентом (CMS)</p>
+						<p><i class="fa fa-check" aria-hidden="true"></i> Кроссбраузерность сайта</p>
+						<p ng-hide="project === 'vizitka'"><i class="fa fa-check" aria-hidden="true"></i> Уникальный дизайн</p>
+						<p><i class="fa fa-check" aria-hidden="true"></i> Адаптивную верстку</p>
+						<p ng-hide="project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Неограниченное количество страниц</p>
+						<p ng-if="project === 'store' || project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Мультиязычный сайт</p>
+						<p><i class="fa fa-check" aria-hidden="true"></i> Установка Яндекс.Метрики и Google Analytics</p>
+						<p ng-if="project === 'corp'"><i class="fa fa-check" aria-hidden="true"></i> Создание корпоративной почты</p>
+						<p ng-if="project === 'vizitka' || project === 'landing'"><i class="fa fa-check" aria-hidden="true"></i> Гарантируемую техническую поддержку</p>
+						<p ng-if="project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Бесплатный хостинг на три месяца</p>
+						<p ng-if="project === 'promo' || project === 'landing' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Форму для приема заказов</p>
+						<p ng-if="project === 'store' || project === 'corp' || project === 'vizitka'"><i class="fa fa-check" aria-hidden="true"></i> Готовый блог внутри сайта</p>
+						<p ng-if="project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Email рассылку прямо из админки</p>
+						<p ng-if="project === 'corp' || project === 'store'"><i class="fa fa-check" aria-hidden="true"></i> Базовую SEO-оптимизацию</p>
+					</div>
+	      </div>
+	      <div class="modal-footer">
+	      	<md-button class="md-raised" data-dismiss="modal">Закрыть</md-button>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 </section>
