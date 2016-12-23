@@ -1487,13 +1487,13 @@ md-checkbox.md-checked .md-icon {
 	width: 100%;
 }
 
-#smmpage #smmorder, #seopage #seoorder {
+#smmpage #smmorder, #seopage #seoorder, #portfoliopage #portfolioorder {
 	background-image: -webkit-linear-gradient(top left, #02b3e4, #02ccba);
 	background-image: -o-linear-gradient(top left, #02b3e4, #02ccba);
 	background-image: linear-gradient(to bottom right, #02b3e4, #02ccba);
 }
 
-#smmpage #smmorder .inner, #seopage #seoorder .inner {
+#smmpage #smmorder .inner, #seopage #seoorder .inner, #portfoliopage #portfolioorder .inner {
 	text-align: center;
   padding: 50px;
   margin: 50px 0px;
