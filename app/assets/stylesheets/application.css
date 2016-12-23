@@ -1205,6 +1205,10 @@ md-checkbox.md-checked .md-icon {
 	font-size: 28px;
 }
 
+.portfolio .looksite {
+	margin-bottom: 50px;
+}
+
 .portfolio-photo {
 	width: 600px;
 	height: 600px;
@@ -1280,7 +1284,7 @@ md-checkbox.md-checked .md-icon {
 
 .price-number {
 	font-family: 'Nova';
-	font-size: 80px;
+	font-size: 70px;
 	font-weight: 700;
 	color: red;
 }
