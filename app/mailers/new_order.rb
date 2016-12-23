@@ -4,7 +4,7 @@ class NewOrder < ApplicationMailer
 
   def created_order(order)
     @order = order
-    mail(to: "marginbit@gmail.com", 
+    mail(to: "koyotostudio@gmail.com", 
       cc: "germaninthetown@gmail.com",
       subject: 'Новая заявка на сайте'
     )
