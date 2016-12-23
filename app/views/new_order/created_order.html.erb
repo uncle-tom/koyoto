@@ -1,8 +1,8 @@
-<% options = %w{vizitka promo landing corp store audit inner seocomplex facebook vk instagram smmcomplex}.select{|p| @order.send(p) }
+<% options = %w{vizitka promo landing corp store audit inner seocomplex facebook vk instagram smmcomplex}.select{|p| @order.send(p) } %>
 
-<p>Name: <p><%= @order.name %></p>
+<p>Name: <%= @order.name %></p>
 
-<p>Contact: <p><%= @order.contact %></p>
+<p>Contact: <%= @order.contact.join(', ') %></p>
 
 <p>Selected: <%= options %></p>
 
