@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161216160452) do
+ActiveRecord::Schema.define(version: 20161223095052) do
 
   create_table "addresses", force: :cascade do |t|
     t.integer  "order_id"
@@ -73,6 +73,7 @@ ActiveRecord::Schema.define(version: 20161216160452) do
     t.string  "promocode"
     t.text    "message"
     t.string  "name"
+    t.string  "contact",    default: "", null: false
   end
 
   create_table "photos", force: :cascade do |t|

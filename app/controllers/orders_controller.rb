@@ -19,6 +19,6 @@ protected
   def order_params
     params.require(:order).permit(:id, :vizitka, :promo, :landing, :corp, 
       :store, :audit, :inner, :seocomplex, :facebook, :vk, :smmcomplex, 
-      :instagram, :promocode, :name, :message)
+      :instagram, :promocode, :name, :message, :contact)
   end
 end

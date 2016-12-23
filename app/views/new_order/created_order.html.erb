@@ -1,54 +1,10 @@
-<% if @order.vizitka %>
-  <p>Визитка: <%= @order.vizitka %></p>
-<% end %>
+<% options = %w{vizitka promo landing corp store audit inner seocomplex facebook vk instagram smmcomplex}.select{|p| @order.send(p) }
 
-<% if @order.promo %>
-  <p>Промо: <p><%= @order.promo %></p>
-<% end %>
+<p>Name: <p><%= @order.name %></p>
 
-<% if @order.landing %>
-  <p>Landing: <p><%= @order.landing %></p>
-<% end %>
+<p>Contact: <p><%= @order.contact %></p>
 
-<% if @order.corp %>
-  <p>Corp: <p><%= @order.corp %></p>
-<% end %>
-
-<% if @order.store %>
-  <p>Интернет-магазин: <p><%= @order.store %></p>
-<% end %>
-
-<% if @order.audit %>
-  <p>Аудит: <p><%= @order.audit %></p>
-<% end %>
-
-<% if @order.inner %>
-  <p>Внутренняя оптимизация: <p><%= @order.inner %></p>
-<% end %>
-
-<% if @order.seocomplex %>
-  <p>Аудит комплексный: <p><%= @order.seocomplex %></p>
-<% end %>
-
-<% if @order.facebook %>
-  <p>Facebook: <p><%= @order.facebook %></p>
-<% end %>
-
-<% if @order.vk %>
-  <p>Vk: <p><%= @order.vk %></p>
-<% end %>
-
-<% if @order.instagram %>
-  <p>Instagram: <p><%= @order.instagram %></p>
-<% end %>
-
-<% if @order.smmcomplex %>
-  <p>SMM complex: <p><%= @order.smmcomplex %></p>
-<% end %>
-
-<% if @order.name %>
-  <p>Name: <p><%= @order.name %></p>
-<% end %>
+<p>Selected: <%= options %></p>
 
 <% if @order.message %>
   <p><%= @order.message %></p>
