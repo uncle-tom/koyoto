@@ -1518,6 +1518,10 @@ md-checkbox.md-checked .md-icon {
   box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
 }
 
+#smmpage #smmcase img { width: 100%; }
+#smmpage #smmcase p { text-align: justify; }
+#smmpage #smmcase hr { width: 60px; border-top: 4px solid #AA7ECD; }
+
 #smm {
   margin:0;
   font-family:sans-serif;

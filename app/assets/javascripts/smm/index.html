@@ -19,9 +19,10 @@
 			<div class="col-md-8">
 				<div class="leftblock">
 					<div class="block">
-						<video muted id="myVideo" class="pc-show" autoplay loop poster="assets/icon/poster.png">
+						<img id="myVideo" src="assets/smm/smm-bg.jpg" alt="">
+						<!-- <video muted id="myVideo" class="pc-show" autoplay loop poster="assets/icon/poster.png">
 							<source src="https://v001.radikal.ru/1612/6f/6143866980-3-7f712246cdd7aca25fea73a838170577.mp4" type="video/mp4">
-						</video>
+						</video> -->
 						<div class="blackvideo"></div>
 						<p class="text-center">Это ваша возможность!<br>Получите стабильный источник новых клиентов
 						<br><br>
@@ -35,7 +36,7 @@
 					<div class="block">
 						<div class="col-md-5 col-xs-6" style="    margin-left: -15px;">
 							<div>
-								<img src="assets/smm-facebook.jpg" alt="">
+								<img src="assets/smm/smm-facebook.jpg" alt="">
 							</div>
 						</div>
 						<div class="col-md-7 col-xs-6">
@@ -46,7 +47,7 @@
 					<div class="block">
 						<div class="col-md-5 col-xs-6" style="    margin-left: -15px;">
 							<div>
-								<img src="assets/smm-instagram.jpg" alt="">
+								<img src="assets/smm/smm-instagram.jpg" alt="">
 							</div>
 						</div>
 						<div class="col-md-7 col-xs-6">
@@ -57,7 +58,7 @@
 					<div class="block">
 						<div class="col-md-5 col-xs-6" style="    margin-left: -15px;">
 							<div>
-								<img src="assets/smm-vk.jpg" alt="">
+								<img src="assets/smm/smm-vk.jpg" alt="">
 							</div>
 						</div>
 						<div class="col-md-7 col-xs-6">
@@ -136,6 +137,21 @@
 			<img src="https://d13yacurqjgara.cloudfront.net/users/43762/screenshots/1559273/itsnottoolate.gif" alt="">
 		</div>
 	</div>
+	<section id="smmcase">
+		<div class="container">
+			<h2 class="text-center">Примеры работ</h2>
+			<div class="margin50"></div>
+			<div ng-repeat="c in cases">
+				<div class="col-md-9 block-center">
+					<p><b>Клиент:</b> {{c.client}}</p>
+					<img ng-src="{{c.img}}" alt="">
+					<p>{{c.name}}</p>
+					<hr>
+				</div>
+				<div class="margin50"></div>
+			</div>
+		</div>
+	</section>
 	<section id="smmorder">
 		<div class="container">
 			<div class="col-md-8 block-center">
