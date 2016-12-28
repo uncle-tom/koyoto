@@ -1194,7 +1194,7 @@ md-checkbox.md-checked .md-icon {
 	Portfolio
 ****************/
 #portfoliopage {
-	background-color: #000;
+	background-color: #f2f2f2;
 }
 
 #portfoliopage .portfolio-bg {
@@ -1214,7 +1214,7 @@ md-checkbox.md-checked .md-icon {
 #portfoliopage .welcome-text_desc {color: #fff;}
 
 #portfoliopage .portfolio {
-  margin-top: -200px;
+  margin-top: -150px;
   background: white;
   padding-top: 30px;
 }
