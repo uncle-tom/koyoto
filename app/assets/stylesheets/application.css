@@ -36,6 +36,18 @@
 	.portfolio .name {
 		min-height: 80px;
 	}
+	#landing .imac {
+	  background: url('iMac-1280.png') no-repeat center top !important;
+	  width: 800px !important;
+	  height: 606px !important;
+	}
+	#landing .imac-landing {
+		background-image: url('imac-landing-1280.jpg') !important;
+		width: 643px !important;
+    height: 362px !important;
+    top: 38px !important;
+    left: 0px !important;
+	}
 }
 
 @media screen and (max-width: 640px) {
