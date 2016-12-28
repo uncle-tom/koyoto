@@ -48,6 +48,18 @@
     top: 38px !important;
     left: 0px !important;
 	}
+	#corp .slider:before {
+	  height: 484px !important;
+	  width: 800px !important;
+	  top: 0;
+	  left: 50%;
+	  background: url('MacBook-1280px.png') center center no-repeat !important;
+	}
+	#corp .slider img {
+		height: 363px !important;
+    width: 577px !important;
+    margin-top: 46px !important;
+	}
 }
 
 @media screen and (max-width: 640px) {
