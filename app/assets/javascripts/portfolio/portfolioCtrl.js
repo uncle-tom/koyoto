@@ -25,7 +25,8 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
       href: "http://candyladyshop.ru/",
       float: "left",
       margin: "0px -15px 0px 15px",
-      bg: "rgba(255, 218, 168, 0.49)"
+      bg: "rgba(255, 218, 168, 0.49)",
+      lookdisplay: 'block'
     },
     {
       name: "Квест-проект Тайная комната",
@@ -35,27 +36,30 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
       href: "http://secretroomkharkov.com.ua",
       float: "right",
       margin: "0px 15px 0px -15px",
-      bg: "rgba(181, 162, 148, 0.3)"
+      bg: "rgba(181, 162, 148, 0.3)",
+      lookdisplay: 'block'
     },
     {
       name: "Rest in Ukraine - отдыхайте в Украине",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
       photo: "assets/portfolio/rest.jpg",
       type: "Промо-сайт",
-      href: "http://secretroomkharkov.com.ua",
+      href: "http://rest-in-ukraine.com/",
       float: "left",
       margin: "0px -15px 0px 15px",
-      bg: "rgba(94, 123, 158, 0.3);"
+      bg: "rgba(94, 123, 158, 0.3);",
+      lookdisplay: 'block'
     },
     {
       name: "KRISOL - стильная женская одежда",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
       photo: "assets/portfolio/krisol1.jpg",
       type: "Интернет-магазин",
-      href: "http://secretroomkharkov.com.ua",
+      href: "http://www.krisol.kiev.ua/",
       float: "right",
       margin: "0px 15px 0px -15px",
-      bg: "rgba(254, 220, 172, 0.61)"
+      bg: "rgba(254, 220, 172, 0.61)",
+      lookdisplay: 'block'
     },
     {
       name: "Scooter Remont - все про скутеры",
@@ -65,18 +69,20 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
       href: "http://scooter-remont.com/",
       float: "left",
       margin: "0px -15px 0px 15px",
-      bg: "rgba(255, 218, 168, 0.49)"
+      bg: "rgba(255, 218, 168, 0.49)",
+      lookdisplay: 'block'
     },
     {
       name: "Ваш новый проект",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dignissimos similique id voluptas, repudiandae error fuga est doloremque.",
       photo: "assets/portfolio/you.jpg",
       type: "Идеальный сайт",
-      href: "/create",
+      href: "/portfolio",
       float: "left",
       margin: "0px -15px 0px 15px",
       bg: "rgba(255, 218, 168, 0.49)",
-      myclass: "last-child_portfolio"
+      myclass: "last-child_portfolio",
+      lookdisplay: 'none'
     }
   ]
 
