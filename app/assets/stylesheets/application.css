@@ -893,7 +893,7 @@ header:hover {
 .client li { padding: 20px; }
 
 #mainsmm {
-	background: url('smm.jpg');
+	background: url('smm/smm.jpg');
 	color: #fff;
 	background-size: cover;
 }
