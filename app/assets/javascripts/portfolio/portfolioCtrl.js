@@ -1,10 +1,21 @@
 angular.module('MyStore').controller('portfolioCtrl', 
   ['$scope', '$state', '$http', '$localStorage', 
-  '$sessionStorage', 'Auth', '$stateParams',
+  '$sessionStorage', 'Auth', '$stateParams', 'Order', 
   portfolioCtrl]);
 
-function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth, $stateParams) {	
+function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth, $stateParams, Order) {	
   console.log('portfolio')
+  $scope.new_order = new Order({order_id: $stateParams.id});
+
+  $scope.send_order = function() {
+    Order.save({ order_id: $stateParams.id, order: $scope.newOrder,  }, 
+      function(response) {
+        console.log('resp from BE', response);
+        $state.go('thank')
+      }
+    );
+  };
+  
   $scope.portfolio = [
     {
       name: "CandyLadyShop - женское нижнее белье",
@@ -67,6 +78,7 @@ function portfolioCtrl($scope, $state, $http, $localStorage, $sessionStorage, Au
       bg: "rgba(255, 218, 168, 0.49)",
       myclass: "last-child_portfolio"
     }
-    
   ]
+
+  
 }
