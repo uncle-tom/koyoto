@@ -26,6 +26,7 @@
 //= require router
 //= require angular-file-upload
 //= require_tree ./models
+//= require_tree ./blog
 //= require_tree ./create
 //= require_tree ./seo
 //= require_tree ./smm

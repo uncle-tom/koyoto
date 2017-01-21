@@ -44,6 +44,11 @@ angular
         controller: 'priceCtrl',
         templateUrl: 'price/index.html'
       })
+      .state('blog', {
+        url: '/blog', 
+        controller: 'blogCtrl',
+        templateUrl: 'blog/index.html'
+      })
       .state('contact', {
         url: '/contact', 
         controller: 'mainCtrl',
