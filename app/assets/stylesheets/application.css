@@ -31,11 +31,14 @@
   font-family: Nova;
   src: url(/assets/Nova.otf);
 }
-
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1420px) { 
 	.work65 {
 		width: 100%;
 	}
+}
+
+@media screen and (max-width: 1280px) {
+	
 	.portfolio .name {
 		min-height: 80px;
 	}
