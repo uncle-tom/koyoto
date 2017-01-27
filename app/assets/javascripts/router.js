@@ -90,6 +90,11 @@ angular
         url: '/work66', 
         controller: 'workCtrl',
         templateUrl: 'work/work66.html'
+      })
+      .state('work64', {
+        url: '/work64', 
+        controller: 'workCtrl',
+        templateUrl: 'work/work64.html'
       });
       $urlRouterProvider.otherwise('/');
 
