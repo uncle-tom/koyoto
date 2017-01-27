@@ -33,6 +33,9 @@
 }
 
 @media screen and (max-width: 1280px) {
+	.work65 {
+		width: 100%;
+	}
 	.portfolio .name {
 		min-height: 80px;
 	}
