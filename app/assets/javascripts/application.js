@@ -40,6 +40,7 @@
 //= require_tree ./photo
 //= require_tree ./animations
 //= require_tree ./plugins
+//= require_tree ./work
 //= require angular-translate
 //= require angular-aria
 //= require angular-material
