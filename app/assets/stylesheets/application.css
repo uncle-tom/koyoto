@@ -615,10 +615,7 @@ header:hover {
 	background: url('main.jpg');
 	background-size: cover;
 	background-position: 50% 0%;
-	    height: 100%;
-    min-height: 100%;
-    width: 100%;
-    position: relative;
+  min-height: 100%;
 }
 
 .welcomeprice {
