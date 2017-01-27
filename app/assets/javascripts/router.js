@@ -80,6 +80,11 @@ angular
         onExit: function(){
           $.scrollify.disable();
         }
+      })
+      .state('work65', {
+        url: '/work65', 
+        controller: 'workCtrl',
+        templateUrl: 'work/work65.html'
       });
       $urlRouterProvider.otherwise('/');
 
