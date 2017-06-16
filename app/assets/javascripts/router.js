@@ -96,7 +96,6 @@ angular
         controller: 'workCtrl',
         templateUrl: 'work/work64.html'
       });
-      $urlRouterProvider.otherwise('/');
 
       $locationProvider.html5Mode({
         enabled: true,
