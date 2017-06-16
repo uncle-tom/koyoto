@@ -95,21 +95,6 @@ angular
         url: '/work64', 
         controller: 'workCtrl',
         templateUrl: 'work/work64.html'
-      })
-      .state('forbizindex', {
-        url: '/forbiz/index', 
-        controller: 'blogCtrl',
-        templateUrl: 'forbiz/index.html'
-      })
-      .state('forbizcatalog', {
-        url: '/forbiz/catalog', 
-        controller: 'blogCtrl',
-        templateUrl: 'forbiz/catalog.html'
-      })
-      .state('forbizsingle', {
-        url: '/forbiz/single', 
-        controller: 'blogCtrl',
-        templateUrl: 'forbiz/single.html'
       });
       $urlRouterProvider.otherwise('/');
 
